@@ -49,9 +49,32 @@ jobs:
         path: reports/
         if-no-files-found: error
         retention-days: 14
+  security:
+    name: Sensitive file check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - name: Reject tracked environment and private-key files
+      run: |-
+        mkdir -p reports
+        python3 scripts/check-sensitive-files.py | tee reports/sensitive-files.txt
+    - name: Save sensitive-file-check
+      if: always()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: sensitive-file-check
+        path: reports/sensitive-files.txt
+        if-no-files-found: error
+        retention-days: 14
   image:
     name: Build container artifact
-    needs: test
+    needs:
+    - test
+    - security
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:

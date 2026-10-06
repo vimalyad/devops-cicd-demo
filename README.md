@@ -37,7 +37,9 @@ The Dockerfile compiles a static executable in a Go build stage, then copies onl
 ```mermaid
 flowchart LR
     A[Push or pull request] --> B[Compile, vet and tests]
+    A --> S[Sensitive file check]
     B --> C[Build container]
+    S --> C
     C --> D[Upload image artifact]
     D --> E[Create kind cluster]
     E --> F[Deploy two replicas]
@@ -50,7 +52,7 @@ flowchart LR
 | CI | Each code push or PR is compiled, vetted and tested automatically. |
 | CD | A passing image is deployed and verified in a disposable Kubernetes environment. This is an ephemeral deployment demonstration, not persistent hosting. |
 | Workflow | [pipeline.yml](.github/workflows/pipeline.yml) defines triggers, permissions and the job dependency graph. |
-| Jobs | `test`, `image` and `deploy` run on separate GitHub-hosted Ubuntu 24.04 runners. `needs` prevents later jobs from running after failure. |
+| Jobs | `test`, `security`, `image` and `deploy` run on separate GitHub-hosted Ubuntu 24.04 runners. Both test and security jobs must pass before the image job can run. |
 | Steps | Checkout, Go setup, commands and artifact transfers execute in order within each job. |
 | Runners | GitHub supplies fresh machines containing Docker; pinned kind and kubectl binaries are installed with SHA256 verification. |
 | Secrets | GitHub supplies the short-lived `GITHUB_TOKEN` for checkout and artifact access. No AWS keys or persistent cluster credentials are needed. Its permissions are explicitly limited. |
@@ -59,6 +61,17 @@ flowchart LR
 | Test | Race-enabled HTTP tests gate the build; deployment smoke checks verify the running service and embedded commit ID. |
 
 Actions are pinned to commit SHAs. The temporary cluster uses an official kind node image pinned by digest. Deployment uses two replicas, resource limits, startup/readiness/liveness probes and a read-only, non-root container. The cleanup trap records diagnostics and deletes the cluster even after a failed smoke test; an `always()` workflow step repeats deletion as a fallback.
+
+The [sensitive-file check](scripts/check-sensitive-files.py) covers the basic security job in
+the instructor's `10-final-cicd-pipeline` exercise. It rejects tracked `.env`, `.env.*`, `.pem`
+and `.key` files, including nested paths and uppercase extensions. It prints paths only and
+never opens file contents. Its report is retained as an artifact even when the gate fails.
+This filename check does not detect secrets embedded in ordinary source files or old commits;
+session 17 uses Gitleaks for that broader check.
+
+```bash
+python3 scripts/check-sensitive-files.py
+```
 
 To repeat deployment locally on Linux x86_64 with Docker:
 
