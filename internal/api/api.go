@@ -30,7 +30,7 @@ func New(version string) http.Handler {
 			respond(w, http.StatusUnprocessableEntity, map[string]string{"error": "replicas must be 1..10000, batch_size 1..replicas, seconds_per_batch 1..3600"})
 			return
 		}
-		batches := (request.Replicas + request.BatchSize - 1) / request.BatchSize
+		batches := request.Replicas / request.BatchSize
 		respond(w, http.StatusOK, Plan{batches, request.Replicas - (batches-1)*request.BatchSize, batches * request.SecondsPerBatch})
 	})
 	return mux
