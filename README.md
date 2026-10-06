@@ -71,6 +71,6 @@ The script uses its own kubeconfig under ignored `.tools/` and creates a specifi
 
 ## Execution evidence
 
-Workflow run links, the deliberate failing-test demonstration and screenshots will be recorded in `evidence/README.md` after execution. Reports under `reports/` are local/runtime outputs and are not committed automatically.
+[Execution evidence](evidence/README.md) includes successful GitHub runs, a test failure that blocks deployment, the corrected run, retained reports and terminal-only screenshots. Reports under `reports/` are local/runtime outputs and are not committed automatically.
 
 This project follows the [session 16 homework](https://docs.google.com/document/d/1cjXFYf2Thm8cBEN-0C48B-v02cj3jGLd47lcO18prHE/edit) and the instructor's [pipeline exercise](https://github.com/Nency-Ravaliya/devops-heros/tree/main/session-16-github-actions/session-16-github-actions/10-final-cicd-pipeline), extended with a real temporary Kubernetes deployment.

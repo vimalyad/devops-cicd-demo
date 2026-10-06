@@ -1,0 +1,62 @@
+[
+    {
+        "Id": "sha256:ac1e3430fab85516ded739be26968a06c15945e5a57d10fe8cad2d78c89ee596",
+        "RepoTags": [
+            "assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-06T19:22:25.058295752Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "65532:65532",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/server"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.source": "https://github.com/vimalyad/devops-cicd-demo"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 6623392,
+        "GraphDriver": {
+            "Data": {
+                "MergedDir": "/var/lib/docker/overlay2/os3owml9dveacmpgmhxvqfabe/merged",
+                "UpperDir": "/var/lib/docker/overlay2/os3owml9dveacmpgmhxvqfabe/diff",
+                "WorkDir": "/var/lib/docker/overlay2/os3owml9dveacmpgmhxvqfabe/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:145d79ddabb08ea617ec6056716f6d47c4259e05db52831dd468f63756e09216"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-06T19:22:25.071543719Z"
+        }
+    }
+]

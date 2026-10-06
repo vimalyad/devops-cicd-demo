@@ -1,0 +1,12 @@
+LAST SEEN   TYPE     REASON              OBJECT                             MESSAGE
+4s          Normal   Scheduled           pod/assignment-795bd89b7b-h6wvz    Successfully assigned assignment/assignment-795bd89b7b-h6wvz to assignment-37518285500-1-control-plane
+4s          Normal   Pulled              pod/assignment-795bd89b7b-h6wvz    Container image "assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5" already present on machine and can be accessed by the pod
+4s          Normal   Created             pod/assignment-795bd89b7b-h6wvz    Container created
+4s          Normal   Started             pod/assignment-795bd89b7b-h6wvz    Container started
+4s          Normal   Scheduled           pod/assignment-795bd89b7b-vctcr    Successfully assigned assignment/assignment-795bd89b7b-vctcr to assignment-37518285500-1-control-plane
+4s          Normal   Pulled              pod/assignment-795bd89b7b-vctcr    Container image "assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5" already present on machine and can be accessed by the pod
+4s          Normal   Created             pod/assignment-795bd89b7b-vctcr    Container created
+4s          Normal   Started             pod/assignment-795bd89b7b-vctcr    Container started
+4s          Normal   SuccessfulCreate    replicaset/assignment-795bd89b7b   Created pod: assignment-795bd89b7b-h6wvz
+4s          Normal   SuccessfulCreate    replicaset/assignment-795bd89b7b   Created pod: assignment-795bd89b7b-vctcr
+4s          Normal   ScalingReplicaSet   deployment/assignment              Scaled up replica set assignment-795bd89b7b from 0 to 2
