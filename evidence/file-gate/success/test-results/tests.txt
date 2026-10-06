@@ -1,0 +1,22 @@
+	github.com/vimalyad/devops-cicd-demo/cmd/server		coverage: 0.0% of statements
+=== RUN   TestPlanBatches
+=== RUN   TestPlanBatches/partial_final_batch
+=== RUN   TestPlanBatches/even_batches
+=== RUN   TestPlanBatches/single_replica
+=== RUN   TestPlanBatches/upper_bounds
+--- PASS: TestPlanBatches (0.00s)
+    --- PASS: TestPlanBatches/partial_final_batch (0.00s)
+    --- PASS: TestPlanBatches/even_batches (0.00s)
+    --- PASS: TestPlanBatches/single_replica (0.00s)
+    --- PASS: TestPlanBatches/upper_bounds (0.00s)
+=== RUN   TestRejectInvalidPlans
+--- PASS: TestRejectInvalidPlans (0.00s)
+=== RUN   TestRejectMalformedJSON
+--- PASS: TestRejectMalformedJSON (0.00s)
+=== RUN   TestHealthAndVersion
+--- PASS: TestHealthAndVersion (0.00s)
+=== RUN   TestWrongMethodAndUnknownRoute
+--- PASS: TestWrongMethodAndUnknownRoute (0.00s)
+PASS
+coverage: 96.6% of statements
+ok  	github.com/vimalyad/devops-cicd-demo/internal/api	1.011s	coverage: 96.6% of statements

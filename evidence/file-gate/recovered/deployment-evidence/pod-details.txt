@@ -1,0 +1,100 @@
+Name:             assignment-7dd5dcc894-8n6jj
+Namespace:        assignment
+Priority:         0
+Service Account:  default
+Node:             assignment-37527748352-1-control-plane/172.18.0.2
+Start Time:       Tue, 06 Oct 2026 20:38:54 +0000
+Labels:           app=assignment
+                  pod-template-hash=7dd5dcc894
+Annotations:      <none>
+Status:           Running
+SeccompProfile:   RuntimeDefault
+IP:               10.244.0.6
+IPs:
+  IP:           10.244.0.6
+Controlled By:  ReplicaSet/assignment-7dd5dcc894
+Containers:
+  api:
+    Container ID:   containerd://adb453fed780c9fa20d0237f459f7fa9aadcd7373a7c704ac550273b4f92ee02
+    Image:          assignment-demo:910d251e85d81678d000e7ec14821018b136b176
+    Image ID:       docker.io/library/import-2026-10-06@sha256:d10699ccede405679e5fe1e3d292b28fc4360f0f99f02a2205f53b2f838456c0
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 06 Oct 2026 20:38:55 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     250m
+      memory:  64Mi
+    Requests:
+      cpu:        50m
+      memory:     16Mi
+    Liveness:     http-get http://:http/healthz delay=0s timeout=1s period=10s successThreshold=1 failureThreshold=3
+    Readiness:    http-get http://:http/healthz delay=0s timeout=1s period=3s successThreshold=1 failureThreshold=3
+    Startup:      http-get http://:http/healthz delay=0s timeout=1s period=2s successThreshold=1 failureThreshold=30
+    Environment:  <none>
+    Mounts:       <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             assignment-7dd5dcc894-bttxz
+Namespace:        assignment
+Priority:         0
+Service Account:  default
+Node:             assignment-37527748352-1-control-plane/172.18.0.2
+Start Time:       Tue, 06 Oct 2026 20:38:54 +0000
+Labels:           app=assignment
+                  pod-template-hash=7dd5dcc894
+Annotations:      <none>
+Status:           Running
+SeccompProfile:   RuntimeDefault
+IP:               10.244.0.5
+IPs:
+  IP:           10.244.0.5
+Controlled By:  ReplicaSet/assignment-7dd5dcc894
+Containers:
+  api:
+    Container ID:   containerd://082d4c82d0ed94392c72a4e95de6b1e61730693a2177e70e1666f74676ce0da4
+    Image:          assignment-demo:910d251e85d81678d000e7ec14821018b136b176
+    Image ID:       docker.io/library/import-2026-10-06@sha256:d10699ccede405679e5fe1e3d292b28fc4360f0f99f02a2205f53b2f838456c0
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 06 Oct 2026 20:38:55 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     250m
+      memory:  64Mi
+    Requests:
+      cpu:        50m
+      memory:     16Mi
+    Liveness:     http-get http://:http/healthz delay=0s timeout=1s period=10s successThreshold=1 failureThreshold=3
+    Readiness:    http-get http://:http/healthz delay=0s timeout=1s period=3s successThreshold=1 failureThreshold=3
+    Startup:      http-get http://:http/healthz delay=0s timeout=1s period=2s successThreshold=1 failureThreshold=30
+    Environment:  <none>
+    Mounts:       <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s

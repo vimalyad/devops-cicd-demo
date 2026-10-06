@@ -55,7 +55,7 @@ flowchart LR
 | Jobs | `test`, `security`, `image` and `deploy` run on separate GitHub-hosted Ubuntu 24.04 runners. Both test and security jobs must pass before the image job can run. |
 | Steps | Checkout, Go setup, commands and artifact transfers execute in order within each job. |
 | Runners | GitHub supplies fresh machines containing Docker; pinned kind and kubectl binaries are installed with SHA256 verification. |
-| Secrets | GitHub supplies the short-lived `GITHUB_TOKEN` for checkout and artifact access. No AWS keys or persistent cluster credentials are needed. Its permissions are explicitly limited. |
+| Secrets | GitHub supplies the short-lived `GITHUB_TOKEN` for authenticated checkout. Its permissions are explicitly limited; no AWS keys or persistent cluster credentials are needed. |
 | Artifacts | Test/coverage results, the container image, image metadata and Kubernetes/HTTP/cleanup evidence are retained for fourteen days. |
 | Build | Go compilation catches build errors; Docker produces the exact executable image later loaded into kind. |
 | Test | Race-enabled HTTP tests gate the build; deployment smoke checks verify the running service and embedded commit ID. |

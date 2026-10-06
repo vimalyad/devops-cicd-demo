@@ -1,0 +1,3 @@
+Checked 54 tracked paths for environment and private-key files.
+Blocked tracked path: "fixtures/sensitive-file-check.key"
+FAIL: remove these files from the committed tree before building an image.

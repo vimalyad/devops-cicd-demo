@@ -1,0 +1,12 @@
+LAST SEEN   TYPE     REASON              OBJECT                             MESSAGE
+3s          Normal   Scheduled           pod/assignment-56954cd88b-h4v8p    Successfully assigned assignment/assignment-56954cd88b-h4v8p to assignment-37527325517-1-control-plane
+3s          Normal   Pulled              pod/assignment-56954cd88b-h4v8p    Container image "assignment-demo:bed53228615fbce3afa97536cb6ba4c0af1e5738" already present on machine and can be accessed by the pod
+3s          Normal   Created             pod/assignment-56954cd88b-h4v8p    Container created
+3s          Normal   Scheduled           pod/assignment-56954cd88b-mvnrz    Successfully assigned assignment/assignment-56954cd88b-mvnrz to assignment-37527325517-1-control-plane
+3s          Normal   Pulled              pod/assignment-56954cd88b-mvnrz    Container image "assignment-demo:bed53228615fbce3afa97536cb6ba4c0af1e5738" already present on machine and can be accessed by the pod
+3s          Normal   Created             pod/assignment-56954cd88b-mvnrz    Container created
+3s          Normal   SuccessfulCreate    replicaset/assignment-56954cd88b   Created pod: assignment-56954cd88b-mvnrz
+3s          Normal   SuccessfulCreate    replicaset/assignment-56954cd88b   Created pod: assignment-56954cd88b-h4v8p
+3s          Normal   ScalingReplicaSet   deployment/assignment              Scaled up replica set assignment-56954cd88b from 0 to 2
+2s          Normal   Started             pod/assignment-56954cd88b-h4v8p    Container started
+2s          Normal   Started             pod/assignment-56954cd88b-mvnrz    Container started
