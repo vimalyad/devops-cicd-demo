@@ -1,0 +1,12 @@
+NAME                             READY   STATUS    RESTARTS   AGE   IP           NODE                                     NOMINATED NODE   READINESS GATES
+pod/assignment-bf4ff8b8d-962hd   1/1     Running   0          3s    10.244.0.6   assignment-37519385191-1-control-plane   <none>           <none>
+pod/assignment-bf4ff8b8d-r5vpt   1/1     Running   0          3s    10.244.0.5   assignment-37519385191-1-control-plane   <none>           <none>
+
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                                     SELECTOR
+deployment.apps/assignment   2/2     2            2           3s    api          assignment-demo:8b473119d82d740259b19855a375222e17d98db3   app=assignment
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/assignment   ClusterIP   10.96.157.197   <none>        80/TCP    3s    app=assignment
+
+NAME                                              ADDRESSTYPE   PORTS   ENDPOINTS               AGE
+endpointslice.discovery.k8s.io/assignment-2d26p   IPv4          8080    10.244.0.5,10.244.0.6   3s

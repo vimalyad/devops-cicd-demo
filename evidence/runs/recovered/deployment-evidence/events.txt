@@ -1,0 +1,12 @@
+LAST SEEN   TYPE     REASON              OBJECT                            MESSAGE
+3s          Normal   Scheduled           pod/assignment-bf4ff8b8d-962hd    Successfully assigned assignment/assignment-bf4ff8b8d-962hd to assignment-37519385191-1-control-plane
+3s          Normal   Pulled              pod/assignment-bf4ff8b8d-962hd    Container image "assignment-demo:8b473119d82d740259b19855a375222e17d98db3" already present on machine and can be accessed by the pod
+3s          Normal   Created             pod/assignment-bf4ff8b8d-962hd    Container created
+3s          Normal   Scheduled           pod/assignment-bf4ff8b8d-r5vpt    Successfully assigned assignment/assignment-bf4ff8b8d-r5vpt to assignment-37519385191-1-control-plane
+3s          Normal   Pulled              pod/assignment-bf4ff8b8d-r5vpt    Container image "assignment-demo:8b473119d82d740259b19855a375222e17d98db3" already present on machine and can be accessed by the pod
+3s          Normal   Created             pod/assignment-bf4ff8b8d-r5vpt    Container created
+3s          Normal   Started             pod/assignment-bf4ff8b8d-r5vpt    Container started
+3s          Normal   SuccessfulCreate    replicaset/assignment-bf4ff8b8d   Created pod: assignment-bf4ff8b8d-r5vpt
+3s          Normal   SuccessfulCreate    replicaset/assignment-bf4ff8b8d   Created pod: assignment-bf4ff8b8d-962hd
+3s          Normal   ScalingReplicaSet   deployment/assignment             Scaled up replica set assignment-bf4ff8b8d from 0 to 2
+2s          Normal   Started             pod/assignment-bf4ff8b8d-962hd    Container started

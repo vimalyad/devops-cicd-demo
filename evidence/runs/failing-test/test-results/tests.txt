@@ -1,0 +1,24 @@
+	github.com/vimalyad/devops-cicd-demo/cmd/server		coverage: 0.0% of statements
+=== RUN   TestPlanBatches
+=== RUN   TestPlanBatches/partial_final_batch
+    api_test.go:33: got {Batches:2 LastBatchSize:4 EstimatedSeconds:40}, want {Batches:3 LastBatchSize:1 EstimatedSeconds:60}
+=== RUN   TestPlanBatches/even_batches
+=== RUN   TestPlanBatches/single_replica
+=== RUN   TestPlanBatches/upper_bounds
+--- FAIL: TestPlanBatches (0.00s)
+    --- FAIL: TestPlanBatches/partial_final_batch (0.00s)
+    --- PASS: TestPlanBatches/even_batches (0.00s)
+    --- PASS: TestPlanBatches/single_replica (0.00s)
+    --- PASS: TestPlanBatches/upper_bounds (0.00s)
+=== RUN   TestRejectInvalidPlans
+--- PASS: TestRejectInvalidPlans (0.00s)
+=== RUN   TestRejectMalformedJSON
+--- PASS: TestRejectMalformedJSON (0.00s)
+=== RUN   TestHealthAndVersion
+--- PASS: TestHealthAndVersion (0.00s)
+=== RUN   TestWrongMethodAndUnknownRoute
+--- PASS: TestWrongMethodAndUnknownRoute (0.00s)
+FAIL
+coverage: 96.6% of statements
+FAIL	github.com/vimalyad/devops-cicd-demo/internal/api	0.020s
+FAIL

@@ -1,0 +1,493 @@
+Build and test	Set up job	﻿2026-10-06T20:34:20.2009882Z Current runner version: '2.337.0'
+Build and test	Set up job	2026-10-06T20:34:20.2035572Z ##[group]Runner Image Provisioner
+Build and test	Set up job	2026-10-06T20:34:20.2036582Z Hosted Compute Agent
+Build and test	Set up job	2026-10-06T20:34:20.2037195Z Version: 20260901.588
+Build and test	Set up job	2026-10-06T20:34:20.2037914Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Build and test	Set up job	2026-10-06T20:34:20.2038676Z Build Date: 2026-09-01T19:56:44Z
+Build and test	Set up job	2026-10-06T20:34:20.2039615Z Worker ID: {70dcb6c2-c454-47ed-b96f-d4eb10f04c7d}
+Build and test	Set up job	2026-10-06T20:34:20.2040423Z Azure Region: westus
+Build and test	Set up job	2026-10-06T20:34:20.2040993Z ##[endgroup]
+Build and test	Set up job	2026-10-06T20:34:20.2042604Z ##[group]Operating System
+Build and test	Set up job	2026-10-06T20:34:20.2043362Z Ubuntu
+Build and test	Set up job	2026-10-06T20:34:20.2043928Z 24.04.5
+Build and test	Set up job	2026-10-06T20:34:20.2044477Z LTS
+Build and test	Set up job	2026-10-06T20:34:20.2045010Z ##[endgroup]
+Build and test	Set up job	2026-10-06T20:34:20.2045589Z ##[group]Runner Image
+Build and test	Set up job	2026-10-06T20:34:20.2046247Z Image: ubuntu-24.04
+Build and test	Set up job	2026-10-06T20:34:20.2046858Z Version: 20260927.320.1
+Build and test	Set up job	2026-10-06T20:34:20.2047986Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Build and test	Set up job	2026-10-06T20:34:20.2050007Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Build and test	Set up job	2026-10-06T20:34:20.2051069Z ##[endgroup]
+Build and test	Set up job	2026-10-06T20:34:20.2052176Z ##[group]GITHUB_TOKEN Permissions
+Build and test	Set up job	2026-10-06T20:34:20.2054714Z Contents: read
+Build and test	Set up job	2026-10-06T20:34:20.2055372Z Metadata: read
+Build and test	Set up job	2026-10-06T20:34:20.2056000Z ##[endgroup]
+Build and test	Set up job	2026-10-06T20:34:20.2058088Z Secret source: Actions
+Build and test	Set up job	2026-10-06T20:34:20.2059142Z Cache mode: write
+Build and test	Set up job	2026-10-06T20:34:20.2060337Z Prepare workflow directory
+Build and test	Set up job	2026-10-06T20:34:20.2521683Z Prepare all required actions
+Build and test	Set up job	2026-10-06T20:34:20.2570098Z Getting action download info
+Build and test	Set up job	2026-10-06T20:34:20.6137888Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Build and test	Set up job	2026-10-06T20:34:20.7255856Z Download action repository 'actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e' (SHA:b7ad1dad31e06c5925ef5d2fc7ad053ef454303e)
+Build and test	Set up job	2026-10-06T20:34:21.1827489Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Build and test	Set up job	2026-10-06T20:34:21.3630042Z Complete job name: Build and test
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T20:34:21.4443506Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4444687Z with:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4445171Z   fetch-depth: 0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4445680Z   persist-credentials: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4446274Z   repository: vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4450456Z   token: ***
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4450964Z   ssh-strict: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4451448Z   ssh-user: git
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4451911Z   clean: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4452399Z   sparse-checkout-cone-mode: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4452978Z   fetch-tags: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4453460Z   show-progress: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4453949Z   lfs: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4454416Z   submodules: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4454906Z   set-safe-directory: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4455452Z   allow-unsafe-pr-checkout: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.4456369Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5473071Z Syncing repository: vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5476127Z ##[group]Getting Git version info
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5477928Z Working directory is '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5480465Z [command]/usr/bin/git version
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5521133Z git version 2.55.0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5543133Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5553816Z Temporarily overriding HOME='/home/runner/work/_temp/c28a06fb-b379-4a5b-b5d3-db05116f4c0e' before making global git config changes
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5556558Z Adding repository directory to the temporary git global config as a safe directory
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5561377Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5623267Z Deleting the contents of '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5627008Z ##[group]Determining repository object format
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5629060Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5630623Z ##[group]Initializing the repository
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5634806Z [command]/usr/bin/git init /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5727212Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5729756Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5731814Z hint: to use in all of your new repositories, which will suppress this warning,
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5733567Z hint: call:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5734576Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5735717Z hint: 	git config --global init.defaultBranch <name>
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5737047Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5738427Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5740722Z hint: 'development'. The just-created branch can be renamed via this command:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5742316Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5743288Z hint: 	git branch -m <name>
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5744420Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5745397Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5747974Z Initialized empty Git repository in /home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5752071Z [command]/usr/bin/git remote add origin https://github.com/vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5790812Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5792494Z ##[group]Disabling automatic garbage collection
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5794430Z [command]/usr/bin/git config --local gc.auto 0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5829114Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5831431Z ##[group]Setting up auth
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5832581Z Removing SSH command configuration
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5836464Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.5871573Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6232870Z Removing HTTP extra header
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6238802Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6278463Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6514171Z Removing includeIf entries pointing to credentials config files
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6519652Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6555263Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6793220Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6834599Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path /home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6868702Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6906020Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6942101Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6973095Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6974043Z ##[group]Fetching the repository
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.6979770Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2460735Z From https://github.com/vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2462992Z  * [new branch]      assignment/complete-pipeline -> origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2464958Z  * [new branch]      exercise/failing-test -> origin/exercise/failing-test
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2466830Z  * [new branch]      exercise/sensitive-file-check -> origin/exercise/sensitive-file-check
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2468613Z  * [new branch]      main                  -> origin/main
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2472208Z [command]/usr/bin/git branch --list --remote origin/exercise/sensitive-file-check
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2500886Z   origin/exercise/sensitive-file-check
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2511135Z [command]/usr/bin/git rev-parse refs/remotes/origin/exercise/sensitive-file-check
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2540330Z 3acebe6ed1ce9754a5422e8d38659d62d947f310
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2545354Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2546744Z ##[group]Determining the checkout info
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2548799Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2551056Z [command]/usr/bin/git sparse-checkout disable
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2615957Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2653155Z ##[group]Checking out the ref
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2657913Z [command]/usr/bin/git checkout --progress --force -B exercise/sensitive-file-check refs/remotes/origin/exercise/sensitive-file-check
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2795594Z Switched to a new branch 'exercise/sensitive-file-check'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2801891Z branch 'exercise/sensitive-file-check' set up to track 'origin/exercise/sensitive-file-check'.
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2810139Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2856710Z [command]/usr/bin/git log -1 --format=%H
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2887867Z 3acebe6ed1ce9754a5422e8d38659d62d947f310
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2897960Z ##[group]Removing auth
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2900471Z Removing SSH command configuration
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2903730Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.2941880Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3201455Z Removing HTTP extra header
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3204094Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3239683Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3462878Z Removing includeIf entries pointing to credentials config files
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3466169Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3499106Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3502684Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3505163Z includeif.gitdir:/github/workspace/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3507253Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3511923Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3536216Z /home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3550614Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-34619f2e\-b2cf\-4b39\-a80d\-62a8c294a76e\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3588721Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3622208Z /home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3631951Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-34619f2e\-b2cf\-4b39\-a80d\-62a8c294a76e\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3671102Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3731620Z /github/runner_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3745232Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-34619f2e\-b2cf\-4b39\-a80d\-62a8c294a76e\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3794666Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3824955Z /github/runner_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3833401Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-34619f2e\-b2cf\-4b39\-a80d\-62a8c294a76e\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3871735Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.4092660Z Removing credentials config '/home/runner/work/_temp/git-credentials-34619f2e-b2cf-4b39-a80d-62a8c294a76e.config'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.4101738Z ##[endgroup]
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	﻿2026-10-06T20:34:22.4426514Z ##[group]Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4428141Z with:
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4428996Z   go-version-file: go.mod
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4430202Z   cache: false
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4431107Z   check-latest: false
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4440197Z   token: ***
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.4506033Z ##[endgroup]
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.5704571Z Setup go version spec 1.27.1
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:22.5716049Z Attempting to download 1.27.1...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:23.1741061Z matching 1.27.1...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:23.1762718Z Acquiring 1.27.1 from https://github.com/actions/go-versions/releases/download/1.27.1-33583469715/go-1.27.1-linux-x64.tar.gz
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:23.7974821Z Extracting Go...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:23.8091569Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d0711374-3b25-47eb-b1b4-cfb6f0e6cbcf -f /home/runner/work/_temp/dc1de1e0-db66-4dda-8a8a-420e6be55e2c
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:25.5665241Z Successfully extracted go to /home/runner/work/_temp/d0711374-3b25-47eb-b1b4-cfb6f0e6cbcf
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:25.5666037Z Adding to the cache ...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5652272Z Successfully cached go to /opt/hostedtoolcache/go/1.27.1/x64
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5654775Z Added go to the path
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5657184Z Successfully set up Go version 1.27.1
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5869748Z go version go1.27.1 linux/amd64
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5870123Z 
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.5870564Z ##[group]go env
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7162436Z AR='ar'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7163058Z CC='gcc'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7163552Z CGO_CFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7164187Z CGO_CPPFLAGS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7164703Z CGO_CXXFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7165330Z CGO_ENABLED='1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7165903Z CGO_FFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7166261Z CGO_LDFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7166619Z CXX='g++'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7166969Z GCCGO='gccgo'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7167292Z GO111MODULE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7167617Z GOAMD64='v1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7167938Z GOARCH='amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7168287Z GOAUTH='netrc'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7168649Z GOBIN='/home/runner/go/bin'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7169085Z GOCACHE='/home/runner/.cache/go-build'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7169902Z GOCACHEPROG=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7170246Z GODEBUG=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7170623Z GOENV='/home/runner/.config/go/env'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7171059Z GOEXE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7171389Z GOEXPERIMENT=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7172053Z GOFIPS140='off'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7172387Z GOFLAGS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7173461Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build3502779322=/tmp/go-build -gno-record-gcc-switches'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7174577Z GOHOSTARCH='amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7174923Z GOHOSTOS='linux'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7175254Z GOINSECURE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7175803Z GOMOD='/home/runner/work/devops-cicd-demo/devops-cicd-demo/go.mod'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7176340Z GOMODCACHE='/home/runner/go/pkg/mod'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7176667Z GONOPROXY=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7176907Z GONOSUMDB=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7177145Z GOOS='linux'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7177393Z GOPACKAGESDRIVER=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7177677Z GOPATH='/home/runner/go'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7177952Z GOPRIVATE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7178280Z GOPROXY='https://proxy.golang.org,direct'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7178709Z GOROOT='/opt/hostedtoolcache/go/1.27.1/x64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7179072Z GOSUMDB='sum.golang.org'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7179670Z GOTELEMETRY='local'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7180020Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7180394Z GOTMPDIR=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7180638Z GOTOOLCHAIN='local'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7181029Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.1/x64/pkg/tool/linux_amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7181473Z GOVCS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7181711Z GOVERSION='go1.27.1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7181976Z GOWORK=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7182226Z PKG_CONFIG='pkg-config'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7182414Z 
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T20:34:31.7182918Z ##[endgroup]
+Build and test	Compile, vet and test with race detection	﻿2026-10-06T20:34:31.7375838Z ##[group]Run mkdir -p reports build
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7376260Z ^[[36;1mmkdir -p reports build^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7376563Z ^[[36;1mgo mod download^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7376929Z ^[[36;1mgo build -trimpath -o build/server ./cmd/server^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7377299Z ^[[36;1mgo vet ./...^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7377755Z ^[[36;1mgo test -race -v -coverprofile=reports/coverage.out ./... | tee reports/tests.txt^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7635785Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7636443Z env:
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7636790Z   GOTOOLCHAIN: local
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7637179Z ##[endgroup]
+Build and test	Compile, vet and test with race detection	2026-10-06T20:34:31.7795738Z go: no module dependencies to download
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.0184908Z 	github.com/vimalyad/devops-cicd-demo/cmd/server		coverage: 0.0% of statements
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8236997Z === RUN   TestPlanBatches
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8237854Z === RUN   TestPlanBatches/partial_final_batch
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8243746Z === RUN   TestPlanBatches/even_batches
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8244660Z === RUN   TestPlanBatches/single_replica
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8245463Z === RUN   TestPlanBatches/upper_bounds
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8246223Z --- PASS: TestPlanBatches (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8247251Z     --- PASS: TestPlanBatches/partial_final_batch (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8248116Z     --- PASS: TestPlanBatches/even_batches (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8248750Z     --- PASS: TestPlanBatches/single_replica (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8249694Z     --- PASS: TestPlanBatches/upper_bounds (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8250233Z === RUN   TestRejectInvalidPlans
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8250693Z --- PASS: TestRejectInvalidPlans (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8251168Z === RUN   TestRejectMalformedJSON
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8251619Z --- PASS: TestRejectMalformedJSON (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8252092Z === RUN   TestHealthAndVersion
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8252523Z --- PASS: TestHealthAndVersion (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8252995Z === RUN   TestWrongMethodAndUnknownRoute
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8253515Z --- PASS: TestWrongMethodAndUnknownRoute (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8253991Z PASS
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8254307Z coverage: 96.6% of statements
+Build and test	Compile, vet and test with race detection	2026-10-06T20:35:19.8255038Z ok  	github.com/vimalyad/devops-cicd-demo/internal/api	1.019s	coverage: 96.6% of statements
+Build and test	Save test-results	﻿2026-10-06T20:35:19.8941456Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Build and test	Save test-results	2026-10-06T20:35:19.8941942Z with:
+Build and test	Save test-results	2026-10-06T20:35:19.8942329Z   name: test-results
+Build and test	Save test-results	2026-10-06T20:35:19.8942551Z   path: reports/
+Build and test	Save test-results	2026-10-06T20:35:19.8942773Z   if-no-files-found: error
+Build and test	Save test-results	2026-10-06T20:35:19.8943021Z   retention-days: 14
+Build and test	Save test-results	2026-10-06T20:35:19.8943255Z   compression-level: 6
+Build and test	Save test-results	2026-10-06T20:35:19.8943482Z   overwrite: false
+Build and test	Save test-results	2026-10-06T20:35:19.8943707Z   include-hidden-files: false
+Build and test	Save test-results	2026-10-06T20:35:19.8943958Z   archive: true
+Build and test	Save test-results	2026-10-06T20:35:19.8944159Z env:
+Build and test	Save test-results	2026-10-06T20:35:19.8944359Z   GOTOOLCHAIN: local
+Build and test	Save test-results	2026-10-06T20:35:19.8944574Z ##[endgroup]
+Build and test	Save test-results	2026-10-06T20:35:20.0423795Z With the provided path, there will be 2 files uploaded
+Build and test	Save test-results	2026-10-06T20:35:20.0424667Z Artifact name is valid!
+Build and test	Save test-results	2026-10-06T20:35:20.0439679Z Root directory input is valid!
+Build and test	Save test-results	2026-10-06T20:35:20.4302046Z Uploading artifact: test-results.zip
+Build and test	Save test-results	2026-10-06T20:35:20.4347029Z Beginning upload of artifact content to blob storage
+Build and test	Save test-results	2026-10-06T20:35:20.7281986Z Uploaded bytes 853
+Build and test	Save test-results	2026-10-06T20:35:20.7983767Z Finished uploading artifact content to blob storage!
+Build and test	Save test-results	2026-10-06T20:35:20.7985140Z SHA256 digest of uploaded artifact is 47939ac212b8a0c58af2d9b1fe6a2a67ed470a9c432312f2810fe77b488a2e86
+Build and test	Save test-results	2026-10-06T20:35:20.7986217Z Finalizing artifact upload
+Build and test	Save test-results	2026-10-06T20:35:21.2428470Z Artifact test-results successfully finalized. Artifact ID 11443191344
+Build and test	Save test-results	2026-10-06T20:35:21.2430969Z Artifact test-results has been successfully uploaded! Final size is 853 bytes. Artifact ID is 11443191344
+Build and test	Save test-results	2026-10-06T20:35:21.2434454Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/artifacts/11443191344
+Build and test	Post Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	﻿2026-10-06T20:35:21.2606509Z Post job cleanup.
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T20:35:21.3910872Z Post job cleanup.
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.4820525Z [command]/usr/bin/git version
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.4881908Z git version 2.55.0
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.4942426Z Temporarily overriding HOME='/home/runner/work/_temp/29ccf22e-608f-489a-951a-e96f2a4393cc' before making global git config changes
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.4952804Z Adding repository directory to the temporary git global config as a safe directory
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.4954385Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5045871Z Removing SSH command configuration
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5046888Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5049643Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5301258Z Removing HTTP extra header
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5307031Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5347665Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5596370Z Removing includeIf entries pointing to credentials config files
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5604101Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:35:21.5647430Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Complete job	﻿2026-10-06T20:35:21.6049858Z Cleaning up orphan processes
+Sensitive file check	Set up job	﻿2026-10-06T20:34:19.8090287Z Current runner version: '2.337.0'
+Sensitive file check	Set up job	2026-10-06T20:34:19.8128303Z ##[group]Runner Image Provisioner
+Sensitive file check	Set up job	2026-10-06T20:34:19.8129759Z Hosted Compute Agent
+Sensitive file check	Set up job	2026-10-06T20:34:19.8130798Z Version: 20261002.596
+Sensitive file check	Set up job	2026-10-06T20:34:19.8132392Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Sensitive file check	Set up job	2026-10-06T20:34:19.8133747Z Build Date: 2026-10-02T22:28:27Z
+Sensitive file check	Set up job	2026-10-06T20:34:19.8135016Z Worker ID: {19b7817a-4239-483d-bfde-7bb3c4731fd4}
+Sensitive file check	Set up job	2026-10-06T20:34:19.8136521Z Region: eastus2
+Sensitive file check	Set up job	2026-10-06T20:34:19.8137528Z Cloud: Azure
+Sensitive file check	Set up job	2026-10-06T20:34:19.8138621Z ##[endgroup]
+Sensitive file check	Set up job	2026-10-06T20:34:19.8141402Z ##[group]Operating System
+Sensitive file check	Set up job	2026-10-06T20:34:19.8142818Z Ubuntu
+Sensitive file check	Set up job	2026-10-06T20:34:19.8143912Z 24.04.5
+Sensitive file check	Set up job	2026-10-06T20:34:19.8144824Z LTS
+Sensitive file check	Set up job	2026-10-06T20:34:19.8145798Z ##[endgroup]
+Sensitive file check	Set up job	2026-10-06T20:34:19.8146765Z ##[group]Runner Image
+Sensitive file check	Set up job	2026-10-06T20:34:19.8147864Z Image: ubuntu-24.04
+Sensitive file check	Set up job	2026-10-06T20:34:19.8149001Z Version: 20261004.327.1
+Sensitive file check	Set up job	2026-10-06T20:34:19.8150872Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+Sensitive file check	Set up job	2026-10-06T20:34:19.8154188Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+Sensitive file check	Set up job	2026-10-06T20:34:19.8155910Z ##[endgroup]
+Sensitive file check	Set up job	2026-10-06T20:34:19.8157836Z ##[group]GITHUB_TOKEN Permissions
+Sensitive file check	Set up job	2026-10-06T20:34:19.8160861Z Contents: read
+Sensitive file check	Set up job	2026-10-06T20:34:19.8163399Z Metadata: read
+Sensitive file check	Set up job	2026-10-06T20:34:19.8164528Z ##[endgroup]
+Sensitive file check	Set up job	2026-10-06T20:34:19.8167754Z Secret source: Actions
+Sensitive file check	Set up job	2026-10-06T20:34:19.8169311Z Cache mode: write
+Sensitive file check	Set up job	2026-10-06T20:34:19.8171051Z Prepare workflow directory
+Sensitive file check	Set up job	2026-10-06T20:34:19.8755858Z Prepare all required actions
+Sensitive file check	Set up job	2026-10-06T20:34:19.8826495Z Getting action download info
+Sensitive file check	Set up job	2026-10-06T20:34:20.1211036Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Sensitive file check	Set up job	2026-10-06T20:34:20.2313718Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Sensitive file check	Set up job	2026-10-06T20:34:20.4099195Z Complete job name: Sensitive file check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T20:34:20.4863830Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4864932Z with:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4865377Z   fetch-depth: 0
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4865844Z   persist-credentials: false
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4866385Z   repository: vimalyad/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4870309Z   token: ***
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4870749Z   ssh-strict: true
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4871192Z   ssh-user: git
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4871624Z   clean: true
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4872268Z   sparse-checkout-cone-mode: true
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4872812Z   fetch-tags: false
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4873260Z   show-progress: true
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4873714Z   lfs: false
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4874143Z   submodules: false
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4874599Z   set-safe-directory: true
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4875114Z   allow-unsafe-pr-checkout: false
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.4875880Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5876514Z Syncing repository: vimalyad/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5879217Z ##[group]Getting Git version info
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5880591Z Working directory is '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5882722Z [command]/usr/bin/git version
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5952374Z git version 2.55.0
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5976167Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5988793Z Temporarily overriding HOME='/home/runner/work/_temp/ca434570-eb3c-4a11-8ff6-ed463b5c6c6e' before making global git config changes
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5990674Z Adding repository directory to the temporary git global config as a safe directory
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.5995351Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6052497Z Deleting the contents of '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6064097Z ##[group]Determining repository object format
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6065890Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6067393Z ##[group]Initializing the repository
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6069272Z [command]/usr/bin/git init /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6195977Z hint: Using 'master' as the name for the initial branch. This default branch name
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6197750Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6199291Z hint: to use in all of your new repositories, which will suppress this warning,
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6200490Z hint: call:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6201187Z hint:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6202251Z hint: 	git config --global init.defaultBranch <name>
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6203329Z hint:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6204274Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6205779Z hint: 'development'. The just-created branch can be renamed via this command:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6206991Z hint:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6207681Z hint: 	git branch -m <name>
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6208432Z hint:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6209470Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6211302Z Initialized empty Git repository in /home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6214379Z [command]/usr/bin/git remote add origin https://github.com/vimalyad/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6268688Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6269933Z ##[group]Disabling automatic garbage collection
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6272585Z [command]/usr/bin/git config --local gc.auto 0
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6321710Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6323816Z ##[group]Setting up auth
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6324725Z Removing SSH command configuration
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6326032Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6355256Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6835128Z Removing HTTP extra header
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6841013Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.6878276Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7097615Z Removing includeIf entries pointing to credentials config files
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7102664Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7145874Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7375176Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7420487Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path /home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7456871Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7495050Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7531696Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7563788Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7564574Z ##[group]Fetching the repository
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:20.7570287Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0786622Z From https://github.com/vimalyad/devops-cicd-demo
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0787861Z  * [new branch]      assignment/complete-pipeline -> origin/assignment/complete-pipeline
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0789033Z  * [new branch]      exercise/failing-test -> origin/exercise/failing-test
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0790716Z  * [new branch]      exercise/sensitive-file-check -> origin/exercise/sensitive-file-check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0792414Z  * [new branch]      main                  -> origin/main
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0796422Z [command]/usr/bin/git branch --list --remote origin/exercise/sensitive-file-check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0827725Z   origin/exercise/sensitive-file-check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0836670Z [command]/usr/bin/git rev-parse refs/remotes/origin/exercise/sensitive-file-check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0865164Z 3acebe6ed1ce9754a5422e8d38659d62d947f310
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0869679Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0870883Z ##[group]Determining the checkout info
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0872504Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0874709Z [command]/usr/bin/git sparse-checkout disable
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0930888Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0967282Z ##[group]Checking out the ref
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.0971556Z [command]/usr/bin/git checkout --progress --force -B exercise/sensitive-file-check refs/remotes/origin/exercise/sensitive-file-check
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1116810Z Switched to a new branch 'exercise/sensitive-file-check'
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1123358Z branch 'exercise/sensitive-file-check' set up to track 'origin/exercise/sensitive-file-check'.
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1130655Z ##[endgroup]
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1181196Z [command]/usr/bin/git log -1 --format=%H
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1212605Z 3acebe6ed1ce9754a5422e8d38659d62d947f310
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1223089Z ##[group]Removing auth
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1224072Z Removing SSH command configuration
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1228102Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1272556Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1500054Z Removing HTTP extra header
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1504539Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1543882Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1809336Z Removing includeIf entries pointing to credentials config files
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1811650Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1855142Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1857209Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1858928Z includeif.gitdir:/github/workspace/.git.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1860311Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1896428Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1921496Z /home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.1949934Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-702756c2\-358b\-40fc\-9ce4\-1925e7d35cdc\.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2075210Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2144763Z /home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2161920Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-702756c2\-358b\-40fc\-9ce4\-1925e7d35cdc\.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2328439Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2362867Z /github/runner_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.2378773Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-702756c2\-358b\-40fc\-9ce4\-1925e7d35cdc\.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3543072Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3575319Z /github/runner_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3587362Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-702756c2\-358b\-40fc\-9ce4\-1925e7d35cdc\.config
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3627782Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3851899Z Removing credentials config '/home/runner/work/_temp/git-credentials-702756c2-358b-40fc-9ce4-1925e7d35cdc.config'
+Sensitive file check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:21.3860448Z ##[endgroup]
+Sensitive file check	Reject tracked environment and private-key files	﻿2026-10-06T20:34:21.4101423Z ##[group]Run mkdir -p reports
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4103162Z ^[[36;1mmkdir -p reports^[[0m
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4105082Z ^[[36;1mpython3 scripts/check-sensitive-files.py | tee reports/sensitive-files.txt^[[0m
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4370978Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4372602Z ##[endgroup]
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4783842Z Checked 54 tracked paths for environment and private-key files.
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4785784Z Blocked tracked path: "fixtures/sensitive-file-check.key"
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4787687Z FAIL: remove these files from the committed tree before building an image.
+Sensitive file check	Reject tracked environment and private-key files	2026-10-06T20:34:21.4843462Z ##[error]Process completed with exit code 1.
+Sensitive file check	Save sensitive-file-check	﻿2026-10-06T20:34:21.4996853Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.4998447Z with:
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.4999138Z   name: sensitive-file-check
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5000050Z   path: reports/sensitive-files.txt
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5001033Z   if-no-files-found: error
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5001880Z   retention-days: 14
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5002870Z   compression-level: 6
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5003660Z   overwrite: false
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5004439Z   include-hidden-files: false
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5005306Z   archive: true
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.5006000Z ##[endgroup]
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.6494343Z With the provided path, there will be 1 file uploaded
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.6497462Z Artifact name is valid!
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.6498923Z Root directory input is valid!
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.8625161Z Uploading artifact: sensitive-file-check.zip
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.8701284Z Beginning upload of artifact content to blob storage
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.9234060Z Uploaded bytes 296
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.9346606Z Finished uploading artifact content to blob storage!
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.9349024Z SHA256 digest of uploaded artifact is d9633802fa0caa05376d5178ec892b00ab4972594ee06227d5e48d5cccaea552
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:21.9351073Z Finalizing artifact upload
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:22.1964861Z Artifact sensitive-file-check successfully finalized. Artifact ID 11443260347
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:22.1967114Z Artifact sensitive-file-check has been successfully uploaded! Final size is 296 bytes. Artifact ID is 11443260347
+Sensitive file check	Save sensitive-file-check	2026-10-06T20:34:22.1970005Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/artifacts/11443260347
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T20:34:22.2269652Z Post job cleanup.
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3133103Z [command]/usr/bin/git version
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3178952Z git version 2.55.0
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3225897Z Temporarily overriding HOME='/home/runner/work/_temp/890281ce-8ff7-4050-95f2-a5ccfdde1974' before making global git config changes
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3228541Z Adding repository directory to the temporary git global config as a safe directory
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3233486Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3270543Z Removing SSH command configuration
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3277247Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3314524Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3562247Z Removing HTTP extra header
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3575401Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3611040Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3854592Z Removing includeIf entries pointing to credentials config files
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3860207Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Sensitive file check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T20:34:22.3898618Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Sensitive file check	Complete job	﻿2026-10-06T20:34:22.4304325Z Cleaning up orphan processes

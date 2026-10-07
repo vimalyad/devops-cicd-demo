@@ -1,0 +1,5 @@
+GET /healthz 200 {"status": "ok"}
+GET / 200 {"application": "Rollout Planner", "student": "Vimal Kumar Yadav", "version": "4e00ac9cc4b03263ee7da465b310e93c4ce595f5"}
+POST /api/plan 200 {"batches": 3, "last_batch_size": 1, "estimated_seconds": 60}
+POST /api/plan 422 {"error": "replicas must be 1..10000, batch_size 1..replicas, seconds_per_batch 1..3600"}
+PASS: plan calculation and validation through the Kubernetes Service

@@ -1,0 +1,44 @@
+[
+  {
+    "case": "clean",
+    "tracked_path": "src/settings.go",
+    "exit_code": 0,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nPASS: no tracked .env, .env.*, .pem or .key files.\n"
+  },
+  {
+    "case": "environment",
+    "tracked_path": ".env",
+    "exit_code": 1,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nBlocked tracked path: \".env\"\nFAIL: remove these files from the committed tree before building an image.\n"
+  },
+  {
+    "case": "environment-variant",
+    "tracked_path": "config/.env.production",
+    "exit_code": 1,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nBlocked tracked path: \"config/.env.production\"\nFAIL: remove these files from the committed tree before building an image.\n"
+  },
+  {
+    "case": "nested-key",
+    "tracked_path": "credentials/server.key",
+    "exit_code": 1,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nBlocked tracked path: \"credentials/server.key\"\nFAIL: remove these files from the committed tree before building an image.\n"
+  },
+  {
+    "case": "uppercase-key",
+    "tracked_path": "credentials/server.KEY",
+    "exit_code": 1,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nBlocked tracked path: \"credentials/server.KEY\"\nFAIL: remove these files from the committed tree before building an image.\n"
+  },
+  {
+    "case": "space-in-path",
+    "tracked_path": "private files/client.pem",
+    "exit_code": 1,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nBlocked tracked path: \"private files/client.pem\"\nFAIL: remove these files from the committed tree before building an image.\n"
+  },
+  {
+    "case": "similar-extension",
+    "tracked_path": "docs/keyboard.md",
+    "exit_code": 0,
+    "stdout": "Checked 1 tracked paths for environment and private-key files.\nPASS: no tracked .env, .env.*, .pem or .key files.\n"
+  }
+]

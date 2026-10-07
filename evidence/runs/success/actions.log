@@ -1,0 +1,883 @@
+Build and test	Set up job	﻿2026-10-06T19:21:00.6360109Z Current runner version: '2.337.0'
+Build and test	Set up job	2026-10-06T19:21:00.6382047Z ##[group]Runner Image Provisioner
+Build and test	Set up job	2026-10-06T19:21:00.6382874Z Hosted Compute Agent
+Build and test	Set up job	2026-10-06T19:21:00.6383398Z Version: 20261002.596
+Build and test	Set up job	2026-10-06T19:21:00.6383907Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Build and test	Set up job	2026-10-06T19:21:00.6384564Z Build Date: 2026-10-02T22:28:27Z
+Build and test	Set up job	2026-10-06T19:21:00.6385122Z Worker ID: {9cad96c7-950b-4371-a1d3-788072f9046f}
+Build and test	Set up job	2026-10-06T19:21:00.6385713Z Region: westus3
+Build and test	Set up job	2026-10-06T19:21:00.6386209Z Cloud: Azure
+Build and test	Set up job	2026-10-06T19:21:00.6386656Z ##[endgroup]
+Build and test	Set up job	2026-10-06T19:21:00.6388057Z ##[group]Operating System
+Build and test	Set up job	2026-10-06T19:21:00.6388640Z Ubuntu
+Build and test	Set up job	2026-10-06T19:21:00.6389134Z 24.04.5
+Build and test	Set up job	2026-10-06T19:21:00.6389604Z LTS
+Build and test	Set up job	2026-10-06T19:21:00.6390051Z ##[endgroup]
+Build and test	Set up job	2026-10-06T19:21:00.6390554Z ##[group]Runner Image
+Build and test	Set up job	2026-10-06T19:21:00.6391047Z Image: ubuntu-24.04
+Build and test	Set up job	2026-10-06T19:21:00.6391499Z Version: 20261004.327.1
+Build and test	Set up job	2026-10-06T19:21:00.6392455Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+Build and test	Set up job	2026-10-06T19:21:00.6393925Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+Build and test	Set up job	2026-10-06T19:21:00.6394705Z ##[endgroup]
+Build and test	Set up job	2026-10-06T19:21:00.6396001Z ##[group]GITHUB_TOKEN Permissions
+Build and test	Set up job	2026-10-06T19:21:00.6397711Z Contents: read
+Build and test	Set up job	2026-10-06T19:21:00.6398348Z Metadata: read
+Build and test	Set up job	2026-10-06T19:21:00.6398900Z ##[endgroup]
+Build and test	Set up job	2026-10-06T19:21:00.6400658Z Secret source: Actions
+Build and test	Set up job	2026-10-06T19:21:00.6401549Z Cache mode: write
+Build and test	Set up job	2026-10-06T19:21:00.6402294Z Prepare workflow directory
+Build and test	Set up job	2026-10-06T19:21:00.7607180Z Prepare all required actions
+Build and test	Set up job	2026-10-06T19:21:00.7644954Z Getting action download info
+Build and test	Set up job	2026-10-06T19:21:01.1077988Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Build and test	Set up job	2026-10-06T19:21:01.8799829Z Download action repository 'actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e' (SHA:b7ad1dad31e06c5925ef5d2fc7ad053ef454303e)
+Build and test	Set up job	2026-10-06T19:21:03.4684228Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Build and test	Set up job	2026-10-06T19:21:04.0976753Z Complete job name: Build and test
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:21:04.1523852Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1524505Z with:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1524679Z   fetch-depth: 0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1524874Z   persist-credentials: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1525122Z   repository: vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1527426Z   token: ***
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1527603Z   ssh-strict: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1527789Z   ssh-user: git
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1528150Z   clean: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1528328Z   sparse-checkout-cone-mode: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1528538Z   fetch-tags: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1528714Z   show-progress: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1528907Z   lfs: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1529070Z   submodules: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1529245Z   set-safe-directory: true
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1529453Z   allow-unsafe-pr-checkout: false
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.1529864Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2355827Z Syncing repository: vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2357428Z ##[group]Getting Git version info
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2358233Z Working directory is '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2359083Z [command]/usr/bin/git version
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2415979Z git version 2.55.0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2431768Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2440542Z Temporarily overriding HOME='/home/runner/work/_temp/40091c00-4711-4da1-ac17-b2d0e83c5a8b' before making global git config changes
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2442414Z Adding repository directory to the temporary git global config as a safe directory
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2447702Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2500860Z Deleting the contents of '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2508742Z ##[group]Determining repository object format
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2509947Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2510717Z ##[group]Initializing the repository
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2511244Z [command]/usr/bin/git init /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2809335Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2810510Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2811333Z hint: to use in all of your new repositories, which will suppress this warning,
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2812084Z hint: call:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2812546Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2813189Z hint: 	git config --global init.defaultBranch <name>
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2813804Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2814312Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2815093Z hint: 'development'. The just-created branch can be renamed via this command:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2815767Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2816201Z hint: 	git branch -m <name>
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2816643Z hint:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2817172Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2818397Z Initialized empty Git repository in /home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.2821456Z [command]/usr/bin/git remote add origin https://github.com/vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3104864Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3105326Z ##[group]Disabling automatic garbage collection
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3108323Z [command]/usr/bin/git config --local gc.auto 0
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3301618Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3302462Z ##[group]Setting up auth
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3302860Z Removing SSH command configuration
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3306848Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3337575Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3654050Z Removing HTTP extra header
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3658429Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3687400Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3876764Z Removing includeIf entries pointing to credentials config files
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3877508Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.3906106Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4104533Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4139559Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path /home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4170135Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4202560Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4232850Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4260226Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4260706Z ##[group]Fetching the repository
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:04.4266268Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1388876Z From https://github.com/vimalyad/devops-cicd-demo
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1389462Z  * [new branch]      assignment/complete-pipeline -> origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1389869Z  * [new branch]      main       -> origin/main
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1396904Z [command]/usr/bin/git branch --list --remote origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1422188Z   origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1428383Z [command]/usr/bin/git rev-parse refs/remotes/origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1450367Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1453489Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1453902Z ##[group]Determining the checkout info
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1454457Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1457505Z [command]/usr/bin/git sparse-checkout disable
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1503933Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1531825Z ##[group]Checking out the ref
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.1535218Z [command]/usr/bin/git checkout --progress --force -B assignment/complete-pipeline refs/remotes/origin/assignment/complete-pipeline
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2186068Z Switched to a new branch 'assignment/complete-pipeline'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2190039Z branch 'assignment/complete-pipeline' set up to track 'origin/assignment/complete-pipeline'.
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2195936Z ##[endgroup]
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2238373Z [command]/usr/bin/git log -1 --format=%H
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2264177Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2274332Z ##[group]Removing auth
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2274617Z Removing SSH command configuration
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2276070Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2306619Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2499790Z Removing HTTP extra header
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2501828Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2530836Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2717938Z Removing includeIf entries pointing to credentials config files
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2720348Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2750997Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2751719Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2752127Z includeif.gitdir:/github/workspace/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2752420Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2758191Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2780704Z /home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2788617Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-31bd531e\-5233\-43f6\-acd0\-89a77dbd2ced\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2819782Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2847069Z /home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.2853587Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-31bd531e\-5233\-43f6\-acd0\-89a77dbd2ced\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4253880Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4288854Z /github/runner_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4292847Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-31bd531e\-5233\-43f6\-acd0\-89a77dbd2ced\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4325874Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4349921Z /github/runner_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4356525Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-31bd531e\-5233\-43f6\-acd0\-89a77dbd2ced\.config
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4390465Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4595229Z Removing credentials config '/home/runner/work/_temp/git-credentials-31bd531e-5233-43f6-acd0-89a77dbd2ced.config'
+Build and test	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:05.4605022Z ##[endgroup]
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	﻿2026-10-06T19:21:05.4800599Z ##[group]Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4859168Z with:
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4859452Z   go-version-file: go.mod
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4859660Z   cache: false
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4859841Z   check-latest: false
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4862284Z   token: ***
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.4862459Z ##[endgroup]
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.5789136Z Setup go version spec 1.27.1
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:05.5794938Z Attempting to download 1.27.1...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:06.6339306Z matching 1.27.1...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:06.6346063Z Acquiring 1.27.1 from https://github.com/actions/go-versions/releases/download/1.27.1-33583469715/go-1.27.1-linux-x64.tar.gz
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:07.1652760Z Extracting Go...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:07.1743083Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/fbfeb05a-a8b0-4b22-b58a-f0424d9c47d6 -f /home/runner/work/_temp/6c79b14a-d6ac-417d-9ae8-c6a1761db751
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:08.6011928Z Successfully extracted go to /home/runner/work/_temp/fbfeb05a-a8b0-4b22-b58a-f0424d9c47d6
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:08.6012493Z Adding to the cache ...
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2611239Z Successfully cached go to /opt/hostedtoolcache/go/1.27.1/x64
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2612801Z Added go to the path
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2615123Z Successfully set up Go version 1.27.1
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2784487Z go version go1.27.1 linux/amd64
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2784726Z 
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.2784997Z ##[group]go env
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5338844Z AR='ar'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5339143Z CC='gcc'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5339345Z CGO_CFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5339661Z CGO_CPPFLAGS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5339879Z CGO_CXXFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340074Z CGO_ENABLED='1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340262Z CGO_FFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340440Z CGO_LDFLAGS='-O2 -g'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340615Z CXX='g++'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340778Z GCCGO='gccgo'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5340950Z GO111MODULE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5341112Z GOAMD64='v1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5341271Z GOARCH='amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5341443Z GOAUTH='netrc'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5341621Z GOBIN='/home/runner/go/bin'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5341843Z GOCACHE='/home/runner/.cache/go-build'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5342102Z GOCACHEPROG=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5342313Z GODEBUG=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5342520Z GOENV='/home/runner/.config/go/env'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5342790Z GOEXE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5342951Z GOEXPERIMENT=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5343122Z GOFIPS140='off'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5343279Z GOFLAGS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5343816Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build552139803=/tmp/go-build -gno-record-gcc-switches'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5344575Z GOHOSTARCH='amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5344772Z GOHOSTOS='linux'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5344951Z GOINSECURE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5345253Z GOMOD='/home/runner/work/devops-cicd-demo/devops-cicd-demo/go.mod'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5345562Z GOMODCACHE='/home/runner/go/pkg/mod'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5345773Z GONOPROXY=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5345934Z GONOSUMDB=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5346098Z GOOS='linux'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5346297Z GOPACKAGESDRIVER=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5346484Z GOPATH='/home/runner/go'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5346671Z GOPRIVATE=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5346887Z GOPROXY='https://proxy.golang.org,direct'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5347154Z GOROOT='/opt/hostedtoolcache/go/1.27.1/x64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5347398Z GOSUMDB='sum.golang.org'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5347593Z GOTELEMETRY='local'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5347807Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5348244Z GOTMPDIR=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5348419Z GOTOOLCHAIN='local'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5348672Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.1/x64/pkg/tool/linux_amd64'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5348949Z GOVCS=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5349116Z GOVERSION='go1.27.1'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5349290Z GOWORK=''
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5349460Z PKG_CONFIG='pkg-config'
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5349583Z 
+Build and test	Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	2026-10-06T19:21:15.5350017Z ##[endgroup]
+Build and test	Compile, vet and test with race detection	﻿2026-10-06T19:21:15.5520366Z ##[group]Run mkdir -p reports build
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5520701Z ^[[36;1mmkdir -p reports build^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5520923Z ^[[36;1mgo mod download^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5521197Z ^[[36;1mgo build -trimpath -o build/server ./cmd/server^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5521471Z ^[[36;1mgo vet ./...^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5521800Z ^[[36;1mgo test -race -v -coverprofile=reports/coverage.out ./... | tee reports/tests.txt^[[0m
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5782487Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5782813Z env:
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5782986Z   GOTOOLCHAIN: local
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5783194Z ##[endgroup]
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:15.5918283Z go: no module dependencies to download
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:52.1534001Z 	github.com/vimalyad/devops-cicd-demo/cmd/server		coverage: 0.0% of statements
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0755860Z === RUN   TestPlanBatches
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0756292Z === RUN   TestPlanBatches/partial_final_batch
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0756668Z === RUN   TestPlanBatches/even_batches
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0757121Z === RUN   TestPlanBatches/single_replica
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0757466Z === RUN   TestPlanBatches/upper_bounds
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0757959Z --- PASS: TestPlanBatches (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0758466Z     --- PASS: TestPlanBatches/partial_final_batch (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0758942Z     --- PASS: TestPlanBatches/even_batches (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0759408Z     --- PASS: TestPlanBatches/single_replica (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0759848Z     --- PASS: TestPlanBatches/upper_bounds (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0760237Z === RUN   TestRejectInvalidPlans
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0760577Z --- PASS: TestRejectInvalidPlans (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0760960Z === RUN   TestRejectMalformedJSON
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0761306Z --- PASS: TestRejectMalformedJSON (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0761651Z === RUN   TestHealthAndVersion
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0761976Z --- PASS: TestHealthAndVersion (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0762323Z === RUN   TestWrongMethodAndUnknownRoute
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0762695Z --- PASS: TestWrongMethodAndUnknownRoute (0.00s)
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0763015Z PASS
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0763242Z coverage: 96.6% of statements
+Build and test	Compile, vet and test with race detection	2026-10-06T19:21:53.0763795Z ok  	github.com/vimalyad/devops-cicd-demo/internal/api	1.011s	coverage: 96.6% of statements
+Build and test	Save test-results	﻿2026-10-06T19:21:53.1350790Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Build and test	Save test-results	2026-10-06T19:21:53.1351129Z with:
+Build and test	Save test-results	2026-10-06T19:21:53.1351306Z   name: test-results
+Build and test	Save test-results	2026-10-06T19:21:53.1351491Z   path: reports/
+Build and test	Save test-results	2026-10-06T19:21:53.1351673Z   if-no-files-found: error
+Build and test	Save test-results	2026-10-06T19:21:53.1351867Z   retention-days: 14
+Build and test	Save test-results	2026-10-06T19:21:53.1352214Z   compression-level: 6
+Build and test	Save test-results	2026-10-06T19:21:53.1352395Z   overwrite: false
+Build and test	Save test-results	2026-10-06T19:21:53.1352566Z   include-hidden-files: false
+Build and test	Save test-results	2026-10-06T19:21:53.1352761Z   archive: true
+Build and test	Save test-results	2026-10-06T19:21:53.1352944Z env:
+Build and test	Save test-results	2026-10-06T19:21:53.1353099Z   GOTOOLCHAIN: local
+Build and test	Save test-results	2026-10-06T19:21:53.1353268Z ##[endgroup]
+Build and test	Save test-results	2026-10-06T19:21:53.2662340Z With the provided path, there will be 2 files uploaded
+Build and test	Save test-results	2026-10-06T19:21:53.2667090Z Artifact name is valid!
+Build and test	Save test-results	2026-10-06T19:21:53.2667548Z Root directory input is valid!
+Build and test	Save test-results	2026-10-06T19:21:53.6071659Z Uploading artifact: test-results.zip
+Build and test	Save test-results	2026-10-06T19:21:53.6117481Z Beginning upload of artifact content to blob storage
+Build and test	Save test-results	2026-10-06T19:21:53.8905491Z Uploaded bytes 853
+Build and test	Save test-results	2026-10-06T19:21:53.9596806Z Finished uploading artifact content to blob storage!
+Build and test	Save test-results	2026-10-06T19:21:53.9597606Z SHA256 digest of uploaded artifact is ed35ed3a8df45857a1b11f23160d56a968e1d9db775546f6c7b11c8be0d0753f
+Build and test	Save test-results	2026-10-06T19:21:53.9598385Z Finalizing artifact upload
+Build and test	Save test-results	2026-10-06T19:21:54.3868774Z Artifact test-results successfully finalized. Artifact ID 11438870332
+Build and test	Save test-results	2026-10-06T19:21:54.3869695Z Artifact test-results has been successfully uploaded! Final size is 853 bytes. Artifact ID is 11438870332
+Build and test	Save test-results	2026-10-06T19:21:54.3872749Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37518285500/artifacts/11438870332
+Build and test	Post Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e	﻿2026-10-06T19:21:54.4006668Z Post job cleanup.
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:21:54.5095006Z Post job cleanup.
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5804020Z [command]/usr/bin/git version
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5843920Z git version 2.55.0
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5879526Z Temporarily overriding HOME='/home/runner/work/_temp/40acb21e-e227-43e0-a2a5-9c1f9e3db80b' before making global git config changes
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5880572Z Adding repository directory to the temporary git global config as a safe directory
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5884638Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5919505Z Removing SSH command configuration
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5924996Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.5964279Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6210079Z Removing HTTP extra header
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6212178Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6243266Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6518662Z Removing includeIf entries pointing to credentials config files
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6526611Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and test	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:21:54.6570822Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and test	Complete job	﻿2026-10-06T19:21:54.6968304Z Cleaning up orphan processes
+Build container artifact	Set up job	﻿2026-10-06T19:22:02.5220287Z Current runner version: '2.337.0'
+Build container artifact	Set up job	2026-10-06T19:22:02.5237145Z ##[group]Runner Image Provisioner
+Build container artifact	Set up job	2026-10-06T19:22:02.5237768Z Hosted Compute Agent
+Build container artifact	Set up job	2026-10-06T19:22:02.5238137Z Version: 20260901.588
+Build container artifact	Set up job	2026-10-06T19:22:02.5238525Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Build container artifact	Set up job	2026-10-06T19:22:02.5238991Z Build Date: 2026-09-01T19:56:44Z
+Build container artifact	Set up job	2026-10-06T19:22:02.5239400Z Worker ID: {23225f68-e100-48c0-af11-ef16cee1e9d1}
+Build container artifact	Set up job	2026-10-06T19:22:02.5239812Z Azure Region: centralus
+Build container artifact	Set up job	2026-10-06T19:22:02.5240240Z ##[endgroup]
+Build container artifact	Set up job	2026-10-06T19:22:02.5241026Z ##[group]Operating System
+Build container artifact	Set up job	2026-10-06T19:22:02.5241458Z Ubuntu
+Build container artifact	Set up job	2026-10-06T19:22:02.5241774Z 24.04.5
+Build container artifact	Set up job	2026-10-06T19:22:02.5242254Z LTS
+Build container artifact	Set up job	2026-10-06T19:22:02.5242610Z ##[endgroup]
+Build container artifact	Set up job	2026-10-06T19:22:02.5242945Z ##[group]Runner Image
+Build container artifact	Set up job	2026-10-06T19:22:02.5243571Z Image: ubuntu-24.04
+Build container artifact	Set up job	2026-10-06T19:22:02.5243919Z Version: 20260927.320.1
+Build container artifact	Set up job	2026-10-06T19:22:02.5244556Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Build container artifact	Set up job	2026-10-06T19:22:02.5245594Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Build container artifact	Set up job	2026-10-06T19:22:02.5246169Z ##[endgroup]
+Build container artifact	Set up job	2026-10-06T19:22:02.5246867Z ##[group]GITHUB_TOKEN Permissions
+Build container artifact	Set up job	2026-10-06T19:22:02.5248182Z Contents: read
+Build container artifact	Set up job	2026-10-06T19:22:02.5248552Z Metadata: read
+Build container artifact	Set up job	2026-10-06T19:22:02.5248889Z ##[endgroup]
+Build container artifact	Set up job	2026-10-06T19:22:02.5250184Z Secret source: Actions
+Build container artifact	Set up job	2026-10-06T19:22:02.5250762Z Cache mode: write
+Build container artifact	Set up job	2026-10-06T19:22:02.5251227Z Prepare workflow directory
+Build container artifact	Set up job	2026-10-06T19:22:02.5624277Z Prepare all required actions
+Build container artifact	Set up job	2026-10-06T19:22:02.5656969Z Getting action download info
+Build container artifact	Set up job	2026-10-06T19:22:02.8088406Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Build container artifact	Set up job	2026-10-06T19:22:03.0975380Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Build container artifact	Set up job	2026-10-06T19:22:03.3734687Z Complete job name: Build container artifact
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:22:03.4192417Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4193512Z with:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4193927Z   fetch-depth: 0
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4194477Z   persist-credentials: false
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4195157Z   repository: vimalyad/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4197881Z   token: ***
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4198305Z   ssh-strict: true
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4198729Z   ssh-user: git
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4199149Z   clean: true
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4199584Z   sparse-checkout-cone-mode: true
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4200069Z   fetch-tags: false
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4200498Z   show-progress: true
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4200918Z   lfs: false
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4201483Z   submodules: false
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4202220Z   set-safe-directory: true
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4202715Z   allow-unsafe-pr-checkout: false
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4203296Z env:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4203791Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4204373Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4877061Z Syncing repository: vimalyad/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4878979Z ##[group]Getting Git version info
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4879972Z Working directory is '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4881368Z [command]/usr/bin/git version
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4942902Z git version 2.55.0
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4957922Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4965954Z Temporarily overriding HOME='/home/runner/work/_temp/8affff65-d058-4348-9e94-ba2daf371271' before making global git config changes
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4967268Z Adding repository directory to the temporary git global config as a safe directory
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.4970851Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5102200Z Deleting the contents of '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5105781Z ##[group]Determining repository object format
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5107511Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5108730Z ##[group]Initializing the repository
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5111429Z [command]/usr/bin/git init /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5503136Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5504591Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5505985Z hint: to use in all of your new repositories, which will suppress this warning,
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5507076Z hint: call:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5507822Z hint:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5508693Z hint: 	git config --global init.defaultBranch <name>
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5509613Z hint:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5510494Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5511738Z hint: 'development'. The just-created branch can be renamed via this command:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5512972Z hint:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5513776Z hint: 	git branch -m <name>
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5514659Z hint:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5515613Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5517154Z Initialized empty Git repository in /home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5519830Z [command]/usr/bin/git remote add origin https://github.com/vimalyad/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5603518Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5604322Z ##[group]Disabling automatic garbage collection
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5606576Z [command]/usr/bin/git config --local gc.auto 0
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5696506Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5697654Z ##[group]Setting up auth
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5698518Z Removing SSH command configuration
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5701732Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.5732595Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6038322Z Removing HTTP extra header
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6041590Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6069109Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6233340Z Removing includeIf entries pointing to credentials config files
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6236214Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6263162Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6440779Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6493471Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path /home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6693080Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.6846030Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.7094630Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.7494407Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.7495109Z ##[group]Fetching the repository
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:03.7502056Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1643651Z From https://github.com/vimalyad/devops-cicd-demo
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1644781Z  * [new branch]      assignment/complete-pipeline -> origin/assignment/complete-pipeline
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1645574Z  * [new branch]      main       -> origin/main
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1650959Z [command]/usr/bin/git branch --list --remote origin/assignment/complete-pipeline
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1678379Z   origin/assignment/complete-pipeline
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1685221Z [command]/usr/bin/git rev-parse refs/remotes/origin/assignment/complete-pipeline
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1706584Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1709622Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1710185Z ##[group]Determining the checkout info
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1710806Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.1712467Z [command]/usr/bin/git sparse-checkout disable
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2068518Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2173133Z ##[group]Checking out the ref
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2174477Z [command]/usr/bin/git checkout --progress --force -B assignment/complete-pipeline refs/remotes/origin/assignment/complete-pipeline
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2760615Z Switched to a new branch 'assignment/complete-pipeline'
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2770160Z branch 'assignment/complete-pipeline' set up to track 'origin/assignment/complete-pipeline'.
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2774960Z ##[endgroup]
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2810236Z [command]/usr/bin/git log -1 --format=%H
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2833513Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2839750Z ##[group]Removing auth
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2840240Z Removing SSH command configuration
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2842173Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.2870352Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3043591Z Removing HTTP extra header
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3046266Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3076546Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3246284Z Removing includeIf entries pointing to credentials config files
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3247698Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3289359Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3290696Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3292108Z includeif.gitdir:/github/workspace/.git.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3292837Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3295639Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3318036Z /home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3325564Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-b16d25cf\-f8a9\-4e8e\-a6c0\-72a90978b693\.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3471505Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3496086Z /home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3502855Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-b16d25cf\-f8a9\-4e8e\-a6c0\-72a90978b693\.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3562797Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3595685Z /github/runner_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3598090Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-b16d25cf\-f8a9\-4e8e\-a6c0\-72a90978b693\.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3672865Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3694526Z /github/runner_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3699674Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-b16d25cf\-f8a9\-4e8e\-a6c0\-72a90978b693\.config
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.3863230Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.4032605Z Removing credentials config '/home/runner/work/_temp/git-credentials-b16d25cf-f8a9-4e8e-a6c0-72a90978b693.config'
+Build container artifact	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:04.4039117Z ##[endgroup]
+Build container artifact	Build the non-root image	﻿2026-10-06T19:22:04.4202060Z ##[group]Run mkdir -p reports
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4202524Z ^[[36;1mmkdir -p reports^[[0m
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4203066Z ^[[36;1mdocker build --build-arg VERSION="$GITHUB_SHA" -t "$IMAGE" .^[[0m
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4203754Z ^[[36;1mdocker inspect "$IMAGE" > reports/image.json^[[0m
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4762187Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4762838Z env:
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4763257Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Build the non-root image	2026-10-06T19:22:04.4763801Z ##[endgroup]
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.1099292Z #0 building with "default" instance using docker driver
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.1099884Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.1100118Z #1 [internal] load build definition from Dockerfile
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.4346211Z #1 transferring dockerfile:
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.6005394Z #1 transferring dockerfile: 462B 0.0s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.7115210Z #1 DONE 0.8s
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.9466869Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:05.9467682Z #2 [internal] load metadata for docker.io/library/golang:1.27.1-alpine
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.1293286Z #2 ...
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.1293535Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.1293698Z #3 [auth] library/golang:pull token for registry-1.docker.io
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.1293910Z #3 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.2792372Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:06.2793142Z #2 [internal] load metadata for docker.io/library/golang:1.27.1-alpine
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.1111231Z #2 DONE 1.3s
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2164897Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2165325Z #4 [internal] load .dockerignore
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2165616Z #4 transferring context: 96B done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2165847Z #4 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2165928Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2166068Z #5 [internal] load build context
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2166226Z #5 transferring context: 19.30kB done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2166419Z #5 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2166514Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2166882Z #6 [build 1/6] FROM docker.io/library/golang:1.27.1-alpine@sha256:8a5910f31396cd4d89662f56c68b3ae31d374308270a1c3bd96672ee5ed43414
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2167557Z #6 resolve docker.io/library/golang:1.27.1-alpine@sha256:8a5910f31396cd4d89662f56c68b3ae31d374308270a1c3bd96672ee5ed43414 done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.2168146Z #6 extracting sha256:aa6e7f3ded592e443fd9ff13e0934fc149b642f26b962019d38fc8879f8764d1
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3428295Z #6 extracting sha256:aa6e7f3ded592e443fd9ff13e0934fc149b642f26b962019d38fc8879f8764d1 0.0s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3429182Z #6 sha256:340a7d186a598086366ea5264e8c6e74e4dee36dc2d70ac0f621b6b28930a786 2.19kB / 2.19kB done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3429956Z #6 sha256:aa6e7f3ded592e443fd9ff13e0934fc149b642f26b962019d38fc8879f8764d1 247.53kB / 247.53kB 0.1s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3430933Z #6 sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095 20.97MB / 71.08MB 0.2s
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3431775Z #6 sha256:1e707d1be9b7cfef08708f1d35029e5e65c69766a1e39e2c027d0acd54b8e7b5 126B / 126B 0.1s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3433106Z #6 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.1s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3433673Z #6 sha256:8a5910f31396cd4d89662f56c68b3ae31d374308270a1c3bd96672ee5ed43414 10.29kB / 10.29kB done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.3434224Z #6 sha256:cd9a32216aee5667f957a62d13a10032a63fd58e14b3f3d9cc8c2122f501e95e 1.92kB / 1.92kB done
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.4428913Z #6 sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095 50.33MB / 71.08MB 0.3s
+Build container artifact	Build the non-root image	2026-10-06T19:22:07.5435012Z #6 sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095 71.08MB / 71.08MB 0.4s
+Build container artifact	Build the non-root image	2026-10-06T19:22:08.0435779Z #6 sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095 71.08MB / 71.08MB 0.8s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:12.1464588Z #6 extracting sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095
+Build container artifact	Build the non-root image	2026-10-06T19:22:14.8765963Z #6 extracting sha256:ef1dbfdbb5d59bdeac07b1398a9f0808b453513bf6a76eb3ffd509a284483095 2.7s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:16.8331648Z #6 extracting sha256:1e707d1be9b7cfef08708f1d35029e5e65c69766a1e39e2c027d0acd54b8e7b5
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0363107Z #6 extracting sha256:1e707d1be9b7cfef08708f1d35029e5e65c69766a1e39e2c027d0acd54b8e7b5 done
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0363864Z #6 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364105Z #6 DONE 9.7s
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364196Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364256Z #7 [build 2/6] WORKDIR /src
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364386Z #7 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364453Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364513Z #8 [build 3/6] COPY go.* ./
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364643Z #8 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364707Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.0364765Z #9 [build 4/6] RUN go mod download
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.1101180Z #9 0.224 go: no module dependencies to download
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2866275Z #9 DONE 0.2s
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2866499Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2873113Z #10 [build 5/6] COPY . .
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2882354Z #10 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2882659Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:17.2892942Z #11 [build 6/6] RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w -X main.version=4e00ac9cc4b03263ee7da465b310e93c4ce595f5" -o /out/server ./cmd/server
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0185862Z #11 DONE 7.9s
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0838779Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0839139Z #12 [stage-1 1/1] COPY --from=build /out/server /server
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0839413Z #12 DONE 0.0s
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0839517Z 
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0839599Z #13 exporting to image
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0839810Z #13 exporting layers 0.0s done
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0840195Z #13 writing image sha256:ac1e3430fab85516ded739be26968a06c15945e5a57d10fe8cad2d78c89ee596 done
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0840553Z #13 naming to docker.io/library/assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5 done
+Build container artifact	Build the non-root image	2026-10-06T19:22:25.0840872Z #13 DONE 0.0s
+Build container artifact	Save the deployable image	﻿2026-10-06T19:22:25.1030343Z ##[group]Run docker save "$IMAGE" -o image.tar
+Build container artifact	Save the deployable image	2026-10-06T19:22:25.1030579Z ^[[36;1mdocker save "$IMAGE" -o image.tar^[[0m
+Build container artifact	Save the deployable image	2026-10-06T19:22:25.1082468Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Build container artifact	Save the deployable image	2026-10-06T19:22:25.1082655Z env:
+Build container artifact	Save the deployable image	2026-10-06T19:22:25.1082822Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Save the deployable image	2026-10-06T19:22:25.1083025Z ##[endgroup]
+Build container artifact	Save container-image	﻿2026-10-06T19:22:25.1463507Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Build container artifact	Save container-image	2026-10-06T19:22:25.1463749Z with:
+Build container artifact	Save container-image	2026-10-06T19:22:25.1463865Z   name: container-image
+Build container artifact	Save container-image	2026-10-06T19:22:25.1463990Z   path: image.tar
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464115Z   if-no-files-found: error
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464247Z   retention-days: 14
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464370Z   compression-level: 6
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464488Z   overwrite: false
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464607Z   include-hidden-files: false
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464740Z   archive: true
+Build container artifact	Save container-image	2026-10-06T19:22:25.1464849Z env:
+Build container artifact	Save container-image	2026-10-06T19:22:25.1465149Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Save container-image	2026-10-06T19:22:25.1465341Z ##[endgroup]
+Build container artifact	Save container-image	2026-10-06T19:22:25.2343651Z With the provided path, there will be 1 file uploaded
+Build container artifact	Save container-image	2026-10-06T19:22:25.2346895Z Artifact name is valid!
+Build container artifact	Save container-image	2026-10-06T19:22:25.2353869Z Root directory input is valid!
+Build container artifact	Save container-image	2026-10-06T19:22:25.4848354Z Uploading artifact: container-image.zip
+Build container artifact	Save container-image	2026-10-06T19:22:25.4874440Z Beginning upload of artifact content to blob storage
+Build container artifact	Save container-image	2026-10-06T19:22:26.0862002Z Uploaded bytes 2839256
+Build container artifact	Save container-image	2026-10-06T19:22:26.1260584Z Finished uploading artifact content to blob storage!
+Build container artifact	Save container-image	2026-10-06T19:22:26.1261243Z SHA256 digest of uploaded artifact is 97128ebb9158b87c3d935932d5f23dc101eadd04d85e59927958c9bd69e95dd7
+Build container artifact	Save container-image	2026-10-06T19:22:26.1262153Z Finalizing artifact upload
+Build container artifact	Save container-image	2026-10-06T19:22:26.4327799Z Artifact container-image successfully finalized. Artifact ID 11438645634
+Build container artifact	Save container-image	2026-10-06T19:22:26.4328524Z Artifact container-image has been successfully uploaded! Final size is 2839256 bytes. Artifact ID is 11438645634
+Build container artifact	Save container-image	2026-10-06T19:22:26.4330850Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37518285500/artifacts/11438645634
+Build container artifact	Save image-reports	﻿2026-10-06T19:22:26.4448583Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4448804Z with:
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4448916Z   name: image-reports
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449037Z   path: reports/
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449159Z   if-no-files-found: error
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449285Z   retention-days: 14
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449405Z   compression-level: 6
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449522Z   overwrite: false
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449639Z   include-hidden-files: false
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449769Z   archive: true
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4449879Z env:
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4450031Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Build container artifact	Save image-reports	2026-10-06T19:22:26.4450213Z ##[endgroup]
+Build container artifact	Save image-reports	2026-10-06T19:22:26.5349988Z With the provided path, there will be 1 file uploaded
+Build container artifact	Save image-reports	2026-10-06T19:22:26.5353428Z Artifact name is valid!
+Build container artifact	Save image-reports	2026-10-06T19:22:26.5354113Z Root directory input is valid!
+Build container artifact	Save image-reports	2026-10-06T19:22:26.8420151Z Uploading artifact: image-reports.zip
+Build container artifact	Save image-reports	2026-10-06T19:22:26.8448904Z Beginning upload of artifact content to blob storage
+Build container artifact	Save image-reports	2026-10-06T19:22:27.0391719Z Uploaded bytes 898
+Build container artifact	Save image-reports	2026-10-06T19:22:27.0937669Z Finished uploading artifact content to blob storage!
+Build container artifact	Save image-reports	2026-10-06T19:22:27.0938171Z SHA256 digest of uploaded artifact is dc953090b819e861ca4aba21ee3862eb81a52945849d9155aea5106138ebc1e7
+Build container artifact	Save image-reports	2026-10-06T19:22:27.0938602Z Finalizing artifact upload
+Build container artifact	Save image-reports	2026-10-06T19:22:27.4035391Z Artifact image-reports successfully finalized. Artifact ID 11438710632
+Build container artifact	Save image-reports	2026-10-06T19:22:27.4035985Z Artifact image-reports has been successfully uploaded! Final size is 898 bytes. Artifact ID is 11438710632
+Build container artifact	Save image-reports	2026-10-06T19:22:27.4038739Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37518285500/artifacts/11438710632
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:22:27.4175603Z Post job cleanup.
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4709583Z [command]/usr/bin/git version
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4742487Z git version 2.55.0
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4771519Z Temporarily overriding HOME='/home/runner/work/_temp/622dcf79-46ed-45be-9a03-a71aa5846cf6' before making global git config changes
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4772491Z Adding repository directory to the temporary git global config as a safe directory
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4774904Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4802479Z Removing SSH command configuration
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4807965Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.4834768Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5027340Z Removing HTTP extra header
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5032824Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5064672Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5260602Z Removing includeIf entries pointing to credentials config files
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5267753Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build container artifact	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:27.5298560Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build container artifact	Complete job	﻿2026-10-06T19:22:27.5608234Z Cleaning up orphan processes
+Deploy to temporary Kubernetes	Set up job	﻿2026-10-06T19:22:33.5304901Z Current runner version: '2.337.0'
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5327473Z ##[group]Runner Image Provisioner
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5328251Z Hosted Compute Agent
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5328798Z Version: 20260901.588
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5329304Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5329889Z Build Date: 2026-09-01T19:56:44Z
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5330464Z Worker ID: {66355b0a-ff2f-4315-90f3-b99b5ddad533}
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5331029Z Azure Region: centralus
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5331744Z ##[endgroup]
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5332906Z ##[group]Operating System
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5333448Z Ubuntu
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5333908Z 24.04.5
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5334336Z LTS
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5335127Z ##[endgroup]
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5335592Z ##[group]Runner Image
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5336109Z Image: ubuntu-24.04
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5336641Z Version: 20260927.320.1
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5337457Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5338809Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5339536Z ##[endgroup]
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5340543Z ##[group]GITHUB_TOKEN Permissions
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5342647Z Contents: read
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5343208Z Metadata: read
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5343619Z Packages: read
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5344093Z ##[endgroup]
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5345676Z Secret source: Actions
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5346345Z Cache mode: write
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.5346869Z Prepare workflow directory
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.6679085Z Prepare all required actions
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.6733674Z Getting action download info
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:33.9277053Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:34.4472845Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:34.9287589Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Deploy to temporary Kubernetes	Set up job	2026-10-06T19:22:35.0884004Z Complete job name: Deploy to temporary Kubernetes
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:22:35.1386795Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1387657Z with:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1388037Z   fetch-depth: 0
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1388427Z   persist-credentials: false
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1388873Z   repository: vimalyad/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1391975Z   token: ***
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1392382Z   ssh-strict: true
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1392763Z   ssh-user: git
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1393123Z   clean: true
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1393552Z   sparse-checkout-cone-mode: true
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1393974Z   fetch-tags: false
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1394362Z   show-progress: true
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1394764Z   lfs: false
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1395137Z   submodules: false
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1395517Z   set-safe-directory: true
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1395970Z   allow-unsafe-pr-checkout: false
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1396540Z env:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1397008Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1397603Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.1398222Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2165944Z Syncing repository: vimalyad/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2167764Z ##[group]Getting Git version info
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2168400Z Working directory is '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2169324Z [command]/usr/bin/git version
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2240330Z git version 2.55.0
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2264829Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2276577Z Temporarily overriding HOME='/home/runner/work/_temp/a22472aa-504c-4593-bd92-c5795aa3d670' before making global git config changes
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2277989Z Adding repository directory to the temporary git global config as a safe directory
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2281921Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2322783Z Deleting the contents of '/home/runner/work/devops-cicd-demo/devops-cicd-demo'
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2328707Z ##[group]Determining repository object format
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2330135Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2331196Z ##[group]Initializing the repository
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2334965Z [command]/usr/bin/git init /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2448445Z hint: Using 'master' as the name for the initial branch. This default branch name
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2449731Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2450909Z hint: to use in all of your new repositories, which will suppress this warning,
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2451878Z hint: call:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2452433Z hint:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2453064Z hint: 	git config --global init.defaultBranch <name>
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2453801Z hint:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2455109Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2456341Z hint: 'development'. The just-created branch can be renamed via this command:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2457744Z hint:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2458806Z hint: 	git branch -m <name>
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2459551Z hint:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2460534Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2462820Z Initialized empty Git repository in /home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2465053Z [command]/usr/bin/git remote add origin https://github.com/vimalyad/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2503840Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2504885Z ##[group]Disabling automatic garbage collection
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2505848Z [command]/usr/bin/git config --local gc.auto 0
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2535345Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2536544Z ##[group]Setting up auth
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2538225Z Removing SSH command configuration
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2540367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2562472Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2851166Z Removing HTTP extra header
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2855484Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.2880576Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3023657Z Removing includeIf entries pointing to credentials config files
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3028287Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3051117Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3206615Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3232915Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path /home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3257060Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3283031Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3307397Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3328933Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3329607Z ##[group]Fetching the repository
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.3334048Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6843405Z From https://github.com/vimalyad/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6845326Z  * [new branch]      assignment/complete-pipeline -> origin/assignment/complete-pipeline
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6846731Z  * [new branch]      main       -> origin/main
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6850972Z [command]/usr/bin/git branch --list --remote origin/assignment/complete-pipeline
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6872061Z   origin/assignment/complete-pipeline
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6877773Z [command]/usr/bin/git rev-parse refs/remotes/origin/assignment/complete-pipeline
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6894666Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6897610Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6898787Z ##[group]Determining the checkout info
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6900269Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6901064Z [command]/usr/bin/git sparse-checkout disable
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6946700Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6971627Z ##[group]Checking out the ref
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.6974291Z [command]/usr/bin/git checkout --progress --force -B assignment/complete-pipeline refs/remotes/origin/assignment/complete-pipeline
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7024139Z Switched to a new branch 'assignment/complete-pipeline'
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7028333Z branch 'assignment/complete-pipeline' set up to track 'origin/assignment/complete-pipeline'.
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7033706Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7066406Z [command]/usr/bin/git log -1 --format=%H
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7085903Z 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7092778Z ##[group]Removing auth
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7094055Z Removing SSH command configuration
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7095954Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7122740Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7279578Z Removing HTTP extra header
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7281998Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7306607Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7456357Z Removing includeIf entries pointing to credentials config files
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7458365Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7477089Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7479050Z includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7480857Z includeif.gitdir:/github/workspace/.git.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7482424Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7485432Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7500681Z /home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7509694Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-d168f7a0\-285f\-466e\-9af5\-012762709a58\.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7573035Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7590867Z /home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7598997Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/devops-cicd-demo/devops-cicd-demo/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-d168f7a0\-285f\-466e\-9af5\-012762709a58\.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7628489Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7650269Z /github/runner_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7656690Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-d168f7a0\-285f\-466e\-9af5\-012762709a58\.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7684244Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7699600Z /github/runner_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7705303Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-d168f7a0\-285f\-466e\-9af5\-012762709a58\.config
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7731135Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7876782Z Removing credentials config '/home/runner/work/_temp/git-credentials-d168f7a0-285f-466e-9af5-012762709a58.config'
+Deploy to temporary Kubernetes	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:22:35.7887358Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	﻿2026-10-06T19:22:35.8124803Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8126067Z with:
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8126787Z   name: container-image
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8127511Z   path: .
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8128170Z   merge-multiple: false
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8128960Z   repository: vimalyad/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8129875Z   run-id: 37518285500
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8130622Z   skip-decompress: false
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8131590Z   digest-mismatch: error
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8132340Z env:
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8133398Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8134672Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.8135744Z ##[endgroup]
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:35.9195113Z Downloading single artifact
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.0768128Z Preparing to download the following artifacts:
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.0770313Z - container-image (ID: 11438645634, Size: 2839256, Expected Digest: sha256:97128ebb9158b87c3d935932d5f23dc101eadd04d85e59927958c9bd69e95dd7)
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.4094011Z Redirecting to blob download url: https://productionresultssa15.blob.core.windows.net/actions-results/056ce97b-ee11-8410-b4d7-a896293e699b/workflow-job-run-47f4ad4c-08e0-5482-9693-7727619d9413/artifacts/2ec6ba5d5fafce5fe95b5f7b03e5a4ebcb5a1ce1017d9a1803df7f76a31adcf3.zip
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.4099911Z Starting download of artifact to: /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.5808322Z (node:2178) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.5813110Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.9879191Z SHA256 digest of downloaded artifact is 97128ebb9158b87c3d935932d5f23dc101eadd04d85e59927958c9bd69e95dd7
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.9880187Z Artifact download completed successfully.
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.9880793Z Total of 1 artifact(s) downloaded
+Deploy to temporary Kubernetes	Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c	2026-10-06T19:22:36.9881618Z Download artifact has finished successfully
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	﻿2026-10-06T19:22:36.9985223Z ##[group]Run python3 scripts/install-tools.py kind kubectl
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:36.9986072Z ^[[36;1mpython3 scripts/install-tools.py kind kubectl^[[0m
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.0160576Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.0161626Z env:
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.0162117Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.0162565Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.0163422Z ##[endgroup]
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.3520981Z Installed kind v0.33.0; SHA256 verified
+Deploy to temporary Kubernetes	Install pinned Kubernetes tools	2026-10-06T19:22:37.6830156Z Installed kubectl v1.37.1; SHA256 verified
+Deploy to temporary Kubernetes	Load the verified build artifact	﻿2026-10-06T19:22:37.6939832Z ##[group]Run docker load -i image.tar
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6940172Z ^[[36;1mdocker load -i image.tar^[[0m
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6975512Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6975922Z env:
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6976230Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6976618Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.6976978Z ##[endgroup]
+Deploy to temporary Kubernetes	Load the verified build artifact	2026-10-06T19:22:37.8605265Z Loaded image: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	﻿2026-10-06T19:22:37.8653833Z ##[group]Run bash scripts/deploy.sh "$IMAGE"
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8654244Z ^[[36;1mbash scripts/deploy.sh "$IMAGE"^[[0m
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8688140Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8688566Z env:
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8688860Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8689246Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:37.8689573Z ##[endgroup]
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:40.6934667Z Creating cluster "assignment-37518285500-1" ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:40.6936794Z  • Ensuring node image (kindest/node:v1.37.0) 🖼️  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:54.3378016Z  ✓ Ensuring node image (kindest/node:v1.37.0) 🖼️
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:54.3378740Z  • Preparing nodes 📦   ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:57.6267003Z  ✓ Preparing nodes 📦 
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:57.6484145Z  • Writing configuration 📜  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:57.8021702Z  ✓ Writing configuration 📜
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:22:57.8022285Z  • Starting control-plane 🕹️  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:04.4996237Z  ✓ Starting control-plane 🕹️
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:04.4996940Z  • Installing CNI 🔌  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:04.7303290Z  ✓ Installing CNI 🔌
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:04.7303740Z  • Installing StorageClass 💾  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:04.9862348Z  ✓ Installing StorageClass 💾
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:05.0091200Z  • Waiting ≤ 3m0s for control-plane = Ready ⏳  ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.5116509Z  ✓ Waiting ≤ 3m0s for control-plane = Ready ⏳
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.5117154Z  • Ready after 17s 💚
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6297187Z Set kubectl context to "kind-assignment-37518285500-1"
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6297713Z You can now use your cluster with:
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6298018Z 
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6298184Z kubectl cluster-info --context kind-assignment-37518285500-1
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6298451Z 
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.6298860Z Have a nice day! 👋
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:22.7604078Z Image: "assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5" with ID "sha256:ac1e3430fab85516ded739be26968a06c15945e5a57d10fe8cad2d78c89ee596" not yet present on node "assignment-37518285500-1-control-plane", loading...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:23.3355369Z namespace/assignment created
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:23.4557880Z deployment.apps/assignment created
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:23.4970597Z service/assignment created
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:23.6154967Z Waiting for deployment "assignment" rollout to finish: 0 of 2 updated replicas are available...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:25.5886698Z Waiting for deployment "assignment" rollout to finish: 1 of 2 updated replicas are available...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:26.5931448Z deployment "assignment" successfully rolled out
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:26.6326258Z NAME                          READY   STATUS    RESTARTS   AGE   IP           NODE                                     NOMINATED NODE   READINESS GATES
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:26.6327267Z assignment-795bd89b7b-h6wvz   1/1     Running   0          3s    10.244.0.5   assignment-37518285500-1-control-plane   <none>           <none>
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:26.6328437Z assignment-795bd89b7b-vctcr   1/1     Running   0          3s    10.244.0.6   assignment-37518285500-1-control-plane   <none>           <none>
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.6980342Z GET /healthz 200 {"status": "ok"}
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.7022912Z GET / 200 {"application": "Rollout Planner", "student": "Vimal Kumar Yadav", "version": "4e00ac9cc4b03263ee7da465b310e93c4ce595f5"}
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.7043263Z POST /api/plan 200 {"batches": 3, "last_batch_size": 1, "estimated_seconds": 60}
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.7082473Z POST /api/plan 422 {"error": "replicas must be 1..10000, batch_size 1..replicas, seconds_per_batch 1..3600"}
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.7083283Z PASS: plan calculation and validation through the Kubernetes Service
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.7914299Z PASS: Kubernetes rollout and application smoke checks completed
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:27.9725830Z Deleting cluster "assignment-37518285500-1" ...
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:31.9645457Z Deleted nodes: ["assignment-37518285500-1-control-plane"]
+Deploy to temporary Kubernetes	Deploy, verify application behavior and clean up	2026-10-06T19:23:31.9894865Z Verified: assignment cluster is absent
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	﻿2026-10-06T19:23:31.9933191Z ##[group]Run if [[ -x .tools/bin/kind ]]; then .tools/bin/kind delete cluster --name "assignment-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"; fi
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9933898Z ^[[36;1mif [[ -x .tools/bin/kind ]]; then .tools/bin/kind delete cluster --name "assignment-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"; fi^[[0m
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9970296Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9970742Z env:
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9971046Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9971550Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:31.9971956Z ##[endgroup]
+Deploy to temporary Kubernetes	Ensure the temporary cluster is deleted	2026-10-06T19:23:32.0141027Z Deleting cluster "assignment-37518285500-1" ...
+Deploy to temporary Kubernetes	Save deployment-evidence	﻿2026-10-06T19:23:32.0303898Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0304308Z with:
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0304576Z   name: deployment-evidence
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0304844Z   path: reports/
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0305089Z   if-no-files-found: error
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0305384Z   retention-days: 14
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0305653Z   compression-level: 6
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0305887Z   overwrite: false
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0306150Z   include-hidden-files: false
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0306409Z   archive: true
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0306706Z env:
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0306999Z   IMAGE: assignment-demo:4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0307381Z   EXPECTED_VERSION: 4e00ac9cc4b03263ee7da465b310e93c4ce595f5
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.0307709Z ##[endgroup]
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.1402812Z With the provided path, there will be 10 files uploaded
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.1405207Z Artifact name is valid!
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.1405608Z Root directory input is valid!
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.4295942Z Uploading artifact: deployment-evidence.zip
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.4329415Z Beginning upload of artifact content to blob storage
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.6822466Z Uploaded bytes 7338
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.7380372Z Finished uploading artifact content to blob storage!
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.7381390Z SHA256 digest of uploaded artifact is 6abd5c286fa05b37bf75bfa8330eaa7e798ee1bfeefcd7d9b8e9737eb091a751
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:32.7381985Z Finalizing artifact upload
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:33.0447068Z Artifact deployment-evidence successfully finalized. Artifact ID 11438397355
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:33.0447883Z Artifact deployment-evidence has been successfully uploaded! Final size is 7338 bytes. Artifact ID is 11438397355
+Deploy to temporary Kubernetes	Save deployment-evidence	2026-10-06T19:23:33.0452905Z Artifact download URL: https://github.com/vimalyad/devops-cicd-demo/actions/runs/37518285500/artifacts/11438397355
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-06T19:23:33.0597433Z Post job cleanup.
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1255945Z [command]/usr/bin/git version
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1302298Z git version 2.55.0
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1320449Z Temporarily overriding HOME='/home/runner/work/_temp/d9ab4a71-163f-4d70-b4c5-382545ad5617' before making global git config changes
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1322475Z Adding repository directory to the temporary git global config as a safe directory
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1324918Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-cicd-demo/devops-cicd-demo
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1350564Z Removing SSH command configuration
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1355791Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1381930Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1538344Z Removing HTTP extra header
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1542550Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1567410Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1720041Z Removing includeIf entries pointing to credentials config files
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1724625Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy to temporary Kubernetes	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-06T19:23:33.1747586Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy to temporary Kubernetes	Complete job	﻿2026-10-06T19:23:33.2056364Z Cleaning up orphan processes

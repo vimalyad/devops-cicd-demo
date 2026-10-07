@@ -1,0 +1,167 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-10-06T20:34:15Z",
+  "databaseId": 37527445408,
+  "event": "push",
+  "headBranch": "exercise/sensitive-file-check",
+  "headSha": "3acebe6ed1ce9754a5422e8d38659d62d947f310",
+  "jobs": [
+    {
+      "completedAt": "2026-10-06T20:35:24Z",
+      "conclusion": "success",
+      "databaseId": 112487930588,
+      "name": "Build and test",
+      "startedAt": "2026-10-06T20:34:19Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-06T20:34:21Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-06T20:34:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:22Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 2,
+          "startedAt": "2026-10-06T20:34:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:31Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e",
+          "number": 3,
+          "startedAt": "2026-10-06T20:34:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:35:19Z",
+          "conclusion": "success",
+          "name": "Compile, vet and test with race detection",
+          "number": 4,
+          "startedAt": "2026-10-06T20:34:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:35:21Z",
+          "conclusion": "success",
+          "name": "Save test-results",
+          "number": 5,
+          "startedAt": "2026-10-06T20:35:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:35:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e",
+          "number": 9,
+          "startedAt": "2026-10-06T20:35:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:35:21Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 10,
+          "startedAt": "2026-10-06T20:35:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:35:21Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 11,
+          "startedAt": "2026-10-06T20:35:21Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/job/112487930588"
+    },
+    {
+      "completedAt": "2026-10-06T20:34:23Z",
+      "conclusion": "failure",
+      "databaseId": 112487931132,
+      "name": "Sensitive file check",
+      "startedAt": "2026-10-06T20:34:19Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-06T20:34:20Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-06T20:34:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:21Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 2,
+          "startedAt": "2026-10-06T20:34:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:21Z",
+          "conclusion": "failure",
+          "name": "Reject tracked environment and private-key files",
+          "number": 3,
+          "startedAt": "2026-10-06T20:34:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:22Z",
+          "conclusion": "success",
+          "name": "Save sensitive-file-check",
+          "number": 4,
+          "startedAt": "2026-10-06T20:34:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:22Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 8,
+          "startedAt": "2026-10-06T20:34:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-06T20:34:22Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 9,
+          "startedAt": "2026-10-06T20:34:22Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/job/112487931132"
+    },
+    {
+      "completedAt": "2026-10-06T20:35:24Z",
+      "conclusion": "skipped",
+      "databaseId": 112488424790,
+      "name": "Build container artifact",
+      "startedAt": "2026-10-06T20:35:24Z",
+      "status": "completed",
+      "steps": [],
+      "url": "https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/job/112488424790"
+    },
+    {
+      "completedAt": "2026-10-06T20:35:24Z",
+      "conclusion": "skipped",
+      "databaseId": 112488426209,
+      "name": "Deploy to temporary Kubernetes",
+      "startedAt": "2026-10-06T20:35:25Z",
+      "status": "completed",
+      "steps": [],
+      "url": "https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408/job/112488426209"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-10-06T20:35:25Z",
+  "url": "https://github.com/vimalyad/devops-cicd-demo/actions/runs/37527445408"
+}

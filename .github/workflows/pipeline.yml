@@ -1,0 +1,149 @@
+name: CI and Kubernetes deployment
+'on':
+  push:
+    branches:
+    - main
+    - assignment/**
+    - exercise/**
+    paths-ignore:
+    - '**/*.md'
+    - evidence/**
+  pull_request:
+    branches:
+    - main
+  workflow_dispatch: {}
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  test:
+    name: Build and test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+      with:
+        go-version-file: go.mod
+        cache: false
+    - name: Compile, vet and test with race detection
+      run: |-
+        mkdir -p reports build
+        go mod download
+        go build -trimpath -o build/server ./cmd/server
+        go vet ./...
+        go test -race -v -coverprofile=reports/coverage.out ./... | tee reports/tests.txt
+    - name: Save test-results
+      if: always()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: test-results
+        path: reports/
+        if-no-files-found: error
+        retention-days: 14
+  security:
+    name: Sensitive file check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - name: Reject tracked environment and private-key files
+      run: |-
+        mkdir -p reports
+        python3 scripts/check-sensitive-files.py | tee reports/sensitive-files.txt
+    - name: Save sensitive-file-check
+      if: always()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: sensitive-file-check
+        path: reports/sensitive-files.txt
+        if-no-files-found: error
+        retention-days: 14
+  image:
+    name: Build container artifact
+    needs:
+    - test
+    - security
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      IMAGE: assignment-demo:${{ github.sha }}
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - name: Build the non-root image
+      run: |-
+        mkdir -p reports
+        docker build --build-arg VERSION="$GITHUB_SHA" -t "$IMAGE" .
+        docker inspect "$IMAGE" > reports/image.json
+    - name: Save the deployable image
+      run: docker save "$IMAGE" -o image.tar
+    - name: Save container-image
+      if: success()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: container-image
+        path: image.tar
+        if-no-files-found: error
+        retention-days: 14
+    - name: Save image-reports
+      if: always()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: image-reports
+        path: reports/
+        if-no-files-found: error
+        retention-days: 14
+  deploy:
+    name: Deploy to temporary Kubernetes
+    needs: image
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: read
+      packages: read
+    env:
+      IMAGE: assignment-demo:${{ github.sha }}
+      EXPECTED_VERSION: ${{ github.sha }}
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+      with:
+        name: container-image
+        path: .
+    - name: Install pinned Kubernetes tools
+      run: python3 scripts/install-tools.py kind kubectl
+    - name: Load the verified build artifact
+      run: docker load -i image.tar
+    - name: Deploy, verify application behavior and clean up
+      run: bash scripts/deploy.sh "$IMAGE"
+    - name: Ensure the temporary cluster is deleted
+      if: always()
+      run: if [[ -x .tools/bin/kind ]]; then .tools/bin/kind delete cluster --name "assignment-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}";
+        fi
+    - name: Save deployment-evidence
+      if: always()
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      with:
+        name: deployment-evidence
+        path: reports/
+        if-no-files-found: error
+        retention-days: 14
